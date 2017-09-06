@@ -1,0 +1,34 @@
+{
+  "name": "coding-academy-website",
+  "version": "1.0.0",
+  "description": "Resource list for all mockup and pictures:",
+  "main": "ca-js.js",
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misterBIT/coding-academy-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/misterBIT/coding-academy-site/issues"
+  },
+  "homepage": "https://github.com/misterBIT/coding-academy-site#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-if": "^2.0.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-uglify": "^3.0.0",
+    "uglify-es": "^3.0.28"
+  },
+  "devDependencies": {
+    "gulp-css-rebase-urls": "0.0.5",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-useref": "^3.1.2"
+  }
+}

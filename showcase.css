@@ -1,0 +1,97 @@
+#showcase{
+    height: auto;
+}
+
+.cycle {    
+    height: auto;   
+    display: flex;
+    flex-flow: row wrap;  
+    justify-content: space-around;
+    align-items: stretch;
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.cycle > .cycle-head {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0 0 0;
+    text-transform: capitalize
+}
+
+
+.proj {
+    text-align: center;
+    width: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: -2px 5px 30px 0px rgba(76, 39, 39, 0.14);
+    margin: 10px 0 20px 0;
+    direction: ltr;
+}
+.proj-content{
+    text-align: center;
+    width: auto;
+    display: flex;
+    flex-flow: column;
+
+}
+
+
+.proj-thumbnail{
+    width:480px;
+    border-radius: 3px;
+} 
+.proj-desc{
+    width: 100%;
+    max-width: 480px;
+    padding: 0 2%;
+}
+@media(max-width: 700px){
+    .cycle{
+        flex-direction: column; 
+        align-items: center;
+    }
+    .proj-thumbnail{
+        width: 320px;
+    }
+    .proj{
+        width: 320px;   
+    }
+    .proj-content{
+        width: 320px;
+    }
+}
+
+.proj-content > .proj-name {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.proj-content > .proj-creators {
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+.proj-content > .proj-subtitle {
+    margin-bottom: 0;    
+    font-weight: 600;
+}
+
+.proj > .proj-links {
+    margin-bottom: 0; 
+    text-align: left;   
+    padding: 0 0 0 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.13);
+    font-size: 20px;
+}
+.proj > .proj-links > a {
+    padding: 0 5px;
+    border-right: 1px solid rgba(0, 0, 0, 0.13);
+}
+.proj > .proj-links > a > i::before{
+    transition: color 0.2s ease-in;
+    
+}
