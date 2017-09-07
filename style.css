@@ -13675,5 +13675,10 @@ h3 .thank-you{
 }
 
 .landing-container{
-  padding-top: 75px;  
+  padding: 0;
+}
+@media(min-width: 800px){
+  .landing-center{
+    margin-top:70px;
+  }
 }

@@ -33,7 +33,7 @@ if( !$_POST['quick-contact-form-email'] ) {
     die();
 }
 
-Uncomment the following Lines of Code if you want to Force reCaptcha Validation
+// Uncomment the following Lines of Code if you want to Force reCaptcha Validation
 if( !isset( $_POST['g-recaptcha-response'] ) ) {
 	echo '{ "alert": "error", "message": "Captcha not Submitted! Please Try Again." }';
 	die();

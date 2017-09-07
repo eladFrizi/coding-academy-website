@@ -3625,14 +3625,17 @@ var SEMICOLON = SEMICOLON || {};
 							resetForm: true,
 							success: function (data) {
 								if (data.alert === 'success') {
-									var userUrl = window.location.pathname;									
-									if(userUrl.includes('1')){
-										window.location.replace('http://coding-academy.org/thanks1.html')
-									} else if(userUrl.includes('2')){
-										window.location.replace('http://coding-academy.org/thanks2.html')										
-									} else {
-										window.location.replace("http://coding-academy.org/thank.html")
-									}
+									// after the contact from  successfuly submited,
+									// we push the user to the thank you page. 
+									window.location.assign('http://coding-academy.org/thank.html')
+									// var userUrl = window.location.pathname;									
+									// if(userUrl.includes('1')){
+									// 	window.location.assign('http://coding-academy.org/thanks1.html')
+									// } else if(userUrl.includes('2')){
+									// 	window.location.assign('http://coding-academy.org/thanks2.html')										
+									// } else {
+									// 	window.location.assign("http://coding-academy.org/thank.html")
+									// }
 								}
 								$(form).animate({ opacity: 1 });
 								if (elementLoader == 'button') {
