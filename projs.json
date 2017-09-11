@@ -1,0 +1,155 @@
+{
+    "apr17": [
+        {
+            "name": "Weddix",
+            "creators": [
+                "Anton",
+                "Keren",
+                "Elad"
+            ],
+            "gitHub": "https://github.com/AntonPavlenkov/Weddix",
+            "link": "https://weddix.herokuapp.com/",
+            "subtitle": "Build your digital wedding invation",
+            "thumbnail": "./images/projs/weddix.png",
+            "skills": [
+                "HTML",
+                "CSS",
+                "SCSS",
+                "Javascript",
+                "Vuejs",
+                "Vuex (state management)",
+                "Socket.io",
+                "REST API with Node.js & Mongodb",
+                "Google Maps"
+            ],
+            "desc": "Interactive wedding invitation (it’s like Wix for wedding sites. A modern, easy to use single page application where a user may drag and drop various components and customize his invitation."
+        },
+        {
+            "name": "kinderYA!",
+            "creators": [
+                "Erez",
+                "Tamir",
+                "Meir"
+            ],
+            "gitHub": "https://github.com/erezvish/kindergarden-royal",
+            "link": "https://the-kinderya.herokuapp.com/intro/",
+            "subtitle": "The App To Mange Your kinderGraden",
+            "thumbnail": "./images/projs/kinderya.png",
+            "skills": [
+                "HTML",
+                "CSS",
+                "SCSS",
+                "Javascript",
+                "Vuejs",
+                "Vuex (state management)",
+                "Socket.io",
+                "REST API with Node.js & Mongodb",
+                "Fully cross device & responsive"
+            ],
+            "desc": "An app for parents and young kids - when kid arrives in the kindergarten he taps his image to report his arrival, when kids are late to show up, teachers and parents get alerts. And even better – parents can send their love to kids and chat with the teacher."
+        },
+        {
+            "name": "TodoBum",
+            "creators": [
+                "Gal Aviv",
+                "Evyatar Karus",
+                "Guy Kedar"
+            ],
+            "gitHub": "https://github.com/galzunited/tudo_bom",
+            "link": "https://tudo-bom.herokuapp.com/#/todo-main/home",
+            "subtitle": "Make Your City TodoBum Again",
+            "thumbnail": "./images/projs/todoBum.png",
+            "skills": [
+                "HTML",
+                "CSS",
+                "SCSS",
+                "Javascript",
+                "Vuejs",
+                "Vuex (state management)",
+                "Socket.io",
+                "REST API with Node.js & Mongodb",
+                "Fully cross device & responsive"
+            ],
+            "desc": "An app that connects between the citizens and the monopoly authorities. Citizens can report flaws, get community support, and see handling status."
+        },
+        {
+            "name": "Mingler",
+            "creators": [
+                "Keren Oren",
+                "Assaf Margalit",
+                "Ilan Ben-Yosef"
+            ],
+            "gitHub": "https://github.com/ilanbenyos/mingler",
+            "link": "https://minglers.herokuapp.com/",
+            "subtitle": "Meet a Partner For Tonghit",
+            "thumbnail": "./images/projs/mingler.png",
+            "skills": [
+                "HTML",
+                "CSS",
+                "SCSS",
+                "Javascript",
+                "Vuejs",
+                "Vuex (state management)",
+                "Socket.io",
+                "REST API with Node.js & Mongodb",
+                "Fully cross device & responsive"
+            ],
+            "desc": "A Tinder like application, that lets people define their preferences and helps people find their match."
+        },
+        {
+            "name": "Efix",
+            "creators": [
+                "Lora",
+                "Efim",
+                "Oleg"
+            ],
+            "gitHub": "https://github.com/Lariska/final-sprint",
+            "link": "http://efix.rozovsky.im/#/",
+            "thumbnail": "./images/projs/efix.png",
+            "skills": [
+                "HTML",
+                "CSS",
+                "SCSS",
+                "Javascript",
+                "Vuejs",
+                "Vuex (state management)",
+                "Socket.io",
+                "REST API with Node.js & Mongodb",
+                "Fully cross device & responsive"
+            ],
+            "desc": "A cross-platform system to build responsive websites. The user adds and customize various components to build his website."
+        }
+    ],
+    "nov16": [
+        {
+            "name": "Weddix",
+            "creators": [
+                "Anton Pavlenkov",
+                "Keren Dotan Cohen",
+                "Elad Frizi"
+            ],
+            "gitHub": "https://github.com/AntonPavlenkov/Weddix",
+            "link": "https://weddix.herokuapp.com/",
+            "subtitle": "Build your digital wedding invation",
+            "thumbnail": "http://via.placeholder.com/480x270"
+        },
+        {
+            "name": "Weddix",
+            "creators": [
+                "Anton Pavlenkov",
+                "Keren Dotan Cohen",
+                "Elad Frizi"
+            ],
+            "gitHub": "https://github.com/AntonPavlenkov/Weddix",
+            "link": "https://weddix.herokuapp.com/",
+            "subtitle": "Build your digital wedding invation",
+            "thumbnail": "http://via.placeholder.com/480x270",
+            "skills": [
+                "Node.JS",
+                "MongoDB",
+                "Vue",
+                "State Management"
+            ]
+        }
+    ]
+}

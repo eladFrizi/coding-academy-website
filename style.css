@@ -12132,12 +12132,14 @@ h2  {
   left: 44px;
 }
 
-#header-wrap > .container > #logo > a[data-page="staff"]::after{
+#header-wrap > .container > #logo > a[data-page="staff"]::after,
+#header-wrap > .container > #logo > a[data-page="proj"]::after
+{
   top: 45px;
   left: 33px;
 }
-.sticky-header > #header-wrap > .container > #logo > a[data-page="staff"]::after{
-  
+.sticky-header > #header-wrap > .container > #logo > a[data-page="staff"]::after,
+.sticky-header > #header-wrap > .container > #logo > a[data-page="proj"]::after{
   top: 33px;
   left: 21px;
 }
@@ -13682,3 +13684,18 @@ h3 .thank-you{
     margin-top:70px;
   }
 }
+
+.portfolio-meta > li {
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio-meta > li > span:nth-of-type(1) {
+  width: 40%;
+}
+
+.portfolio-meta > li > span:nth-of-type(2) {
+  text-align: left;
+  width: 100%;
+}
+
+

@@ -41,7 +41,7 @@
 
 function getStudentsProjs() {
     return {
-        'April 17': [
+        apr17: [
             {
                 name: 'Weddix',
                 creators: ['Anton Pavlenkov', 'Keren Dotan Cohen', 'Elad Frizi'],
@@ -80,7 +80,7 @@ function getStudentsProjs() {
             },
 
         ],
-        'November 16': [
+        'nov16': [
             {
                 name: 'Weddix',
                 creators: ['Anton Pavlenkov', 'Keren Dotan Cohen', 'Elad Frizi'],
