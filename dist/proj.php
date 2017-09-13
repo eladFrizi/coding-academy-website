@@ -145,11 +145,11 @@
 									<div>שאלות נפוצות</div>
 								</a>
 							</li>
-							<!-- <li>
+							<li>
 								<a href="showcase.html">
 									<div>פרויקטים</div>
 								</a>
-							</li> -->
+							</li>
 
 
 							<li>

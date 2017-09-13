@@ -19,9 +19,10 @@
 		$url .= $_SERVER["REQUEST_URI"];
 		return $url;
 	  }
-	  
-	$proj = array_values($filteredCycle)[0];
-
+	
+	$projs = array_values($filteredCycle);
+	$proj = $projs[0];
+	  echo var_dump($projs);
     ?>
 <!DOCTYPE html>
 <html dir="rtl" lang="he">
@@ -161,11 +162,11 @@
 									<div>שאלות נפוצות</div>
 								</a>
 							</li>
-							<!-- <li>
+							<li>
 								<a href="showcase.html">
 									<div>פרויקטים</div>
 								</a>
-							</li> -->
+							</li>
 
 
 							<li>
