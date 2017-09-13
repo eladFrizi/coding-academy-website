@@ -6,7 +6,7 @@ var replace = require('gulp-replace');
 var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
 
-gulp.task('all', function () {
+gulp.task('cssjs', function () {
   return gulp.src('*.+(html|php)')
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
@@ -30,11 +30,16 @@ gulp.task('swipercss', function () {
   return gulp.src('css/swiper.css')
     .pipe(gulp.dest('dist/css'))
 })
+
 gulp.task('data', function () {
   return gulp.src('projs.json')
     .pipe(gulp.dest('dist'))
 })
 
+gulp.task('showcase', function(){
+  return gulp.src('showcase.+(js|css)')
+    .pipe(gulp.dest('dist'))
+})
   // gulp.task('js', function(){
   //   return gulp.src('./*.html')
   //     .pipe(useref())
@@ -42,3 +47,5 @@ gulp.task('data', function () {
   //     .pipe(gulpIf('*.js', uglify()))
   //     .pipe(gulp.dest('dist'))
   // });
+
+  gulp.task('build', ['showcase','data','swipercss','fonts','images','cssjs'])

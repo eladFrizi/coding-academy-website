@@ -13699,3 +13699,13 @@ h3 .thank-you{
 }
 
 
+a.retina-logo > img {
+  left: 0 !important;
+}
+
+@media (max-width: 767px){
+  #page-title {
+      padding: 10px 25px !important;
+      text-align: center;
+  }
+}  

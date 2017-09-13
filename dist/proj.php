@@ -170,19 +170,16 @@
 		</header>
 		<!-- #header end -->
 
-
 		<!-- Page Title
 		============================================= -->
 		<section id="page-title">
 
-			<div class="container clearfix">
+			<div class="container clearfix" style="padding: 0">
                 <h1><?php
 					echo $proj->name;					
                     ?></h1>
-				<div id="portfolio-navigation">
-					<a href="portfolio-food.html"><i class="icon-angle-left"></i></a>
-					<a href="for-employers.html"><i class="icon-line-grid"></i></a>
-					<a href="portfolio-swab.html"><i class="icon-angle-right"></i></a>
+				<div id="portfolio-navigation" style="display:flex; justify-content:center;">
+					<a href="showcase.html"><i class="icon-line-grid"></i></a>
 				</div>
 			</div>
 
@@ -193,14 +190,14 @@
 		============================================= -->
 		<section id="content">
 
-			<div class="content-wrap marginTop">
+			<div class="content-wrap">
 
-				<div class="container clearfix">
+				<div class="container clearfix" style="margin-top:-5px;">
 
 					<!-- Portfolio Single Image
 					============================================= -->
 					<div class="col_two_third portfolio-single-image nobottommargin">
-						<a href="https://katarzis-cfb41.firebaseapp.com" target="_blank"><img src="<?php echo $proj->thumbnail;?>"  alt="lama-lizrok"></a>
+						<img src="<?php echo $proj->thumbnail16x9;?>"  alt="lama-lizrok">
 						<!-- <a href="https://katarzis-cfb41.firebaseapp.com" target="_blank"><img src="./images/projs/weddix.png"  alt="lama-lizrok"></a> -->
 					</div>
 					<!-- .portfolio-single-image end -->
@@ -211,8 +208,8 @@
 
 						<!-- Portfolio Single - Description
 						============================================= -->
-						<div class="fancy-title title-bottom-border">
-							<h2>על הפרויקט:</h2>
+						<div class="fancy-title title-bottom-border" style="margin-bottom :15px;">
+							<h2 style="text-align:center; margin-top: 12px;">על הפרויקט:</h2>
 						</div>
 						<p dir="ltr"> 
 						<?php
@@ -222,7 +219,7 @@
 						<!-- <p>האפליקציה לומדת את המשתמש ומציעה לו אוטומטית את הרכבת הבאה ליעד הקבוע שלו</p> -->
 						<!-- Portfolio Single - Description End -->
 
-						<div class="line"></div>
+						<!-- <div class="line"></div> -->
 
 						<!-- Portfolio Single - Meta
 						============================================= -->

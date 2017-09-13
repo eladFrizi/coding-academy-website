@@ -10,7 +10,8 @@
             "gitHub": "https://github.com/AntonPavlenkov/Weddix",
             "link": "https://weddix.herokuapp.com/",
             "subtitle": "Build your digital wedding invation",
-            "thumbnail": "./images/projs/weddix.png",
+            "thumbnail4x3": "./images/projs/4x3/weddix4x3.png",
+            "thumbnail16x9": "./images/projs/weddix.png",
             "skills": [
                 "HTML",
                 "CSS",
@@ -34,7 +35,8 @@
             "gitHub": "https://github.com/erezvish/kindergarden-royal",
             "link": "https://the-kinderya.herokuapp.com/intro/",
             "subtitle": "The App To Mange Your kinderGraden",
-            "thumbnail": "./images/projs/kinderya.png",
+            "thumbnail4x3": "./images/projs/4x3/kinderya4x3.png",
+            "thumbnail16x9": "./images/projs/kinderya.png",
             "skills": [
                 "HTML",
                 "CSS",
@@ -51,14 +53,15 @@
         {
             "name": "TodoBum",
             "creators": [
-                "Gal Aviv",
-                "Evyatar Karus",
-                "Guy Kedar"
+                "Gal",
+                "Evyatar",
+                "Guy"
             ],
             "gitHub": "https://github.com/galzunited/tudo_bom",
             "link": "https://tudo-bom.herokuapp.com/#/todo-main/home",
             "subtitle": "Make Your City TodoBum Again",
-            "thumbnail": "./images/projs/todoBum.png",
+            "thumbnail4x3": "./images/projs/4x3/todoBom4x3.png",
+            "thumbnail16x9": "./images/projs/todoBum.png",
             "skills": [
                 "HTML",
                 "CSS",
@@ -75,14 +78,15 @@
         {
             "name": "Mingler",
             "creators": [
-                "Keren Oren",
-                "Assaf Margalit",
-                "Ilan Ben-Yosef"
+                "Keren",
+                "Assaf",
+                "Ilan"
             ],
             "gitHub": "https://github.com/ilanbenyos/mingler",
             "link": "https://minglers.herokuapp.com/",
             "subtitle": "Meet a Partner For Tonghit",
-            "thumbnail": "./images/projs/mingler.png",
+            "thumbnail4x3": "./images/projs/4x3/mingler4x3.png",
+            "thumbnail16x9": "./images/projs/mingler.png",
             "skills": [
                 "HTML",
                 "CSS",
@@ -105,7 +109,9 @@
             ],
             "gitHub": "https://github.com/Lariska/final-sprint",
             "link": "http://efix.rozovsky.im/#/",
-            "thumbnail": "./images/projs/efix.png",
+            "subtitle": "Build Your Website",
+            "thumbnail4x3": "./images/projs/4x3/efix4x3.png",
+            "thumbnail16x9": "./images/projs/efix.png",
             "skills": [
                 "HTML",
                 "CSS",
@@ -131,7 +137,7 @@
             "gitHub": "https://github.com/AntonPavlenkov/Weddix",
             "link": "https://weddix.herokuapp.com/",
             "subtitle": "Build your digital wedding invation",
-            "thumbnail": "http://via.placeholder.com/480x270"
+            "thumbnail4x3": "http://via.placeholder.com/480x270"
         },
         {
             "name": "Weddix",
@@ -143,7 +149,7 @@
             "gitHub": "https://github.com/AntonPavlenkov/Weddix",
             "link": "https://weddix.herokuapp.com/",
             "subtitle": "Build your digital wedding invation",
-            "thumbnail": "http://via.placeholder.com/480x270",
+            "thumbnail4x3": "http://via.placeholder.com/480x270",
             "skills": [
                 "Node.JS",
                 "MongoDB",
