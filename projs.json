@@ -51,7 +51,7 @@
             "desc": "An app for parents and young kids - when kid arrives in the kindergarten he taps his image to report his arrival, when kids are late to show up, teachers and parents get alerts. And even better – parents can send their love to kids and chat with the teacher."
         },
         {
-            "name": "TodoBum",
+            "name": "TodoBom",
             "creators": [
                 "Gal",
                 "Evyatar",
@@ -59,9 +59,9 @@
             ],
             "gitHub": "https://github.com/galzunited/tudo_bom",
             "link": "https://tudo-bom.herokuapp.com/#/todo-main/home",
-            "subtitle": "Make Your City TodoBum Again",
+            "subtitle": "Make Your City TodoBom Again",
             "thumbnail4x3": "./images/projs/4x3/todoBom4x3.png",
-            "thumbnail16x9": "./images/projs/todoBum.png",
+            "thumbnail16x9": "./images/projs/todoBom.png",
             "skills": [
                 "HTML",
                 "CSS",
@@ -128,34 +128,92 @@
     ],
     "nov16": [
         {
-            "name": "Weddix",
+            "name": "Katarzis",
             "creators": [
-                "Anton Pavlenkov",
-                "Keren Dotan Cohen",
-                "Elad Frizi"
+                "Ilan",
+                "Ofir"
             ],
-            "gitHub": "https://github.com/AntonPavlenkov/Weddix",
-            "link": "https://weddix.herokuapp.com/",
-            "subtitle": "Build your digital wedding invation",
-            "thumbnail4x3": "http://via.placeholder.com/480x270"
-        },
-        {
-            "name": "Weddix",
-            "creators": [
-                "Anton Pavlenkov",
-                "Keren Dotan Cohen",
-                "Elad Frizi"
-            ],
-            "gitHub": "https://github.com/AntonPavlenkov/Weddix",
-            "link": "https://weddix.herokuapp.com/",
-            "subtitle": "Build your digital wedding invation",
-            "thumbnail4x3": "http://via.placeholder.com/480x270",
             "skills": [
                 "Node.JS",
                 "MongoDB",
-                "Vue",
-                "State Management"
-            ]
+                "AngularJS",
+                "Fully cross device & responsive"
+            ],
+            "gitHub": "https://github.com/OfirNadav/katarzis",
+            "link": "https://katarzis-cfb41.firebaseapp.com/",
+            "subtitle": "Find your next train",
+            "thumbnail4x3": "./images/projs/4x3/katarzis4x3.png",
+            "thumbnail16x9": "./images/projs/katarzis.png",
+            "desc": "An application that does one thing, finds the next train coming out of the nearest station. The app learns the user and automatically offers him the next train to his permanent destination."
+        },
+        {
+            "name": "FeelMyMeal",
+            "creators": [
+                "Mark",
+                "Omer"
+            ],
+            "gitHub": "https://github.com/OmerZfira/feel-my-meal",
+            "link": "https://feel-my-meal.herokuapp.com/#/",
+            "subtitle": "Know what you eat",
+            "thumbnail4x3": "./images/projs/4x3/feelmymeal4x3.png",
+            "thumbnail16x9": "./images/projs/feelMyMeal.png",
+            "skills": [
+                "HTML",
+                "CSS",
+                "SCSS",
+                "Javascript",
+                "Vuejs",
+                "Vuex (state management)",
+                "REST API with Node.js & Mongodb",
+                "Fully cross device & responsive"
+            ],
+            "desc": "A nutrition tracking app that lets you see statistics about the foods you ate, and how you felt after eating them.The app is suitable for people with food allergies who want to build a balanced and individual menu."
+        },
+        {
+            "name": "LamaLizrok",
+            "creators": [
+                "Tomer",
+                "Itay"
+            ],
+            "gitHub": "https://github.com/neta-kedem/LamaLizrok",
+            "link": "https://coding-academy.net/llamalizrok/#/",
+            "subtitle": "One Man's Garbage is Another Man's Treasure",
+            "thumbnail4x3": "./images/projs/4x3/lamaLizrok4x3.png",
+            "thumbnail16x9": "./images/projs/lamaLizrok.png",
+            "skills": [
+                "HTML",
+                "CSS",
+                "SCSS",
+                "Javascript",
+                "Vuejs",
+                "Vuex (state management)",
+                "REST API with Node.js & Mongodb",
+                "Fully cross device & responsive"
+            ],
+            "desc": "A nutrition tracking app that lets you see statistics about the foods you ate, and how you felt after eating them.The app is suitable for people with food allergies who want to build a balanced and individual menu."
+        },
+        {
+            "name": "SWAB",
+            "creators": [
+                "Shay",
+                "Itay"
+            ],
+            "gitHub": "https://github.com/shaypeleg1/swab",
+            "link": "https://coding-academy.net/swab/",
+            "subtitle": "Simple Website Builder",
+            "thumbnail4x3": "./images/projs/4x3/swab4x3.png",
+            "thumbnail16x9": "./images/projs/swab.png",
+            "skills": [
+                "HTML",
+                "CSS",
+                "SCSS",
+                "Javascript",
+                "Vuejs",
+                "Vuex (state management)",
+                "REST API with Node.js & Mongodb",
+                "Fully cross device & responsive"
+            ],
+            "desc": "An application that allows a user to build a simple website in just a few minutes.Can not figure out what WordPress is? Building a website in Wix makes you a headache? This is the app for you."
         }
     ]
 }

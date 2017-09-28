@@ -19,21 +19,26 @@
 		$url .= $_SERVER["REQUEST_URI"];
 		return $url;
 	  }
-	  
-	$proj = array_values($filteredCycle)[0];
-
+	
+	$projs = array_values($filteredCycle);
+	$proj = $projs[0];
+	$ogImgsuffix = substr($proj->thumbnail4x3,1)
     ?>
 <!DOCTYPE html>
 <html dir="rtl" lang="he">
 
 <head>
 	<title>Coding Academy- ללמוד לתכנת</title>
+	<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
+
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="MisterBit" />
+
 	<meta property="og:title" content="Coding Academy- ללמוד לתכנת |<?php echo $proj->name;?>" />
-	<meta property="og:type" content="project.preview" />
 	<meta property="og:url" content="<?php echo getUrl();?>" />
-	<meta property="og:image" content="images/ca-logo.png" />
+	<meta property="og:image" content="http://coding-academy.org<? echo $ogImgsuffix;?>" />
+	<meta property="og:description" content="<?echo $proj->desc?>"></meta>
 
 
 	<script>
@@ -254,7 +259,7 @@
 		============================================= -->
 		<footer id="footer" class="dark">
 
-			<div class="container">
+			<div class="container footer-con">
 
 				<!-- Footer Widgets
 				============================================= -->
@@ -267,15 +272,11 @@
 
 							<div class="widget clearfix">
 
-								<img src="images/ca-logo-dark-footer-1.png" alt="" class="footer-logo">
-
-								<!-- <p>אצלנו תלמדו לתכנת <strong>במהירות</strong> וב<strong>יעילות</strong>.</p> -->
-
-								<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
-									<address title="Address">
+								<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;" class="info-container">
+									<abbr title="Address">
 										<strong>הנהלה</strong> הבונים 4 רמת גן
-									</address>
-									<abbr title="Phone Number"><strong>טלפון:</strong><span dir="ltr">(054) 638 7666 </span></abbr><br>
+									</abbr>
+									<abbr title="Phone Number"><strong>טלפון:</strong><span dir="ltr">(079) 555 1155 </span></abbr>
 									<abbr title="Email Address"><strong>דוא"ל:</strong><span> admin@misterbit.co.il</span></abbr>
 								</div>
 
@@ -284,7 +285,7 @@
 						</div>
 
 						<!-- בלוגים -->
-						<div class="col_one_third">
+						<div class="col_one_third blog-posts-container">
 
 							<div class="widget widget_links clearfix">
 
@@ -298,12 +299,10 @@
 
 							</div>
 
-						</div>
 
-						<div class="col_one_third col_last">
 
 							<!-- פוסטים אחרונים -->
-							<div class="widget clearfix">
+							<div>
 								<h4>פוסטים אחרונים</h4>
 
 								<div class="post-list-footer">
@@ -414,33 +413,35 @@
 			============================================= -->
 			<div id="copyrights">
 
-				<div class="container clearfix">
+				<div class="clearfix">
 
-					<div dir="ltr" class="col_half" style="text-align: center">
+					<!-- <div dir="ltr" class="col_half" style="text-align: center">
 						@misterBit 2017
-					</div>
-
-					<div class="col_half col_last tright">
-						<div class="copyright-links" dir="ltr">
-							<i class="icon-envelope2"></i><a href="mailto:admin@misterbit.co.il" style="text-decoration: none"> admin@misterbit.co.il </a>
-							<span
-							 class="middot">&middot;</span>
-								<i class="icon-phone3"></i> +972-54-638-7666
+					</div> -->
+					<div class="phone-copy">
+						<div style="background-size: 100%;" class="info-container">
+							<abbr title="Address">
+									<strong>הנהלה</strong> הבונים 4 רמת גן
+								</abbr>
+							<abbr title="Phone Number"><strong>טלפון:</strong><span dir="ltr">(079) 555 1155 </span></abbr>
+							<abbr title="Email Address"><strong>דוא"ל:</strong><span> admin@misterbit.co.il</span></abbr>
 						</div>
+
+						<img src="images/ca-logo-dark-footer-1.png" alt="coding academy" style="display:block;">
+					</div>
+					<div class="center" dir="rtl">
+						@misterBit 2017
 					</div>
 
 				</div>
 
+
 			</div>
-			<!-- #copyrights end -->
 
-		</footer>
-		<!-- #footer end -->
+	</div>
+	<!-- #copyrights end -->
 
-		</div>
-		<!-- #wrapper end -->
-
-		<!-- Go To Top
+	</footer>		<!-- Go To Top
 	============================================= -->
 		<div id="gotoTop" class="icon-angle-up"></div>
 
