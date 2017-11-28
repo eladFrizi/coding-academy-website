@@ -8,8 +8,8 @@ $listId = 'd69738bf6a';                             //  MailChimp List ID
 // This is an array or target emails
 $toEmails   = array();
 $toEmails[] = array(
-    'email' => 'or@misterbit.co.il', // Your Email Address
-    'name' => 'Or' // Your Name
+    'email' => 'assaf@misterbit.co.il', // Your Email Address
+    'name' => 'Assaf' // Your Name
 );
 
 
