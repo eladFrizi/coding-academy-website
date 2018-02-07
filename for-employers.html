@@ -39,9 +39,8 @@
 
 	<!-- Stylesheets
 	============================================= -->
-	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic"
-	 rel="stylesheet" type="text/css" />
-	<link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Secular+One|Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet">
+
 		<!--build:css styles.min.css--> 	
 
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
@@ -68,7 +67,7 @@
 	<!-- Document Title
 	============================================= -->
 	<!-- Add Your favicon here -->
-	<link rel="icon" href="images/icons/favicon.ico">
+	<link rel="icon" href="images/favicon.ico">
 	<title>Coding Academy- ללמוד לתכנת</title>
 
 </head>
@@ -400,10 +399,11 @@
 									<textarea class="required sm-form-control input-block-level short-textarea" id="quick-contact-form-message" name="quick-contact-form-message"
 									 rows="4" cols="30" placeholder="נשמח לשמוע מכם"></textarea>
 									<input type="text" class="hidden" id="quick-contact-form-botcheck" name="quick-contact-form-botcheck" value="" />
-									<div class="col_full">
+									<!-- TODO: moshe - uncomment the captcha!!! -->
+									<!-- <div class="col_full">
 										<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 										<div class="g-recaptcha" data-sitekey="6Ldm1yIUAAAAAOjrZkc3RZXcZHeAp78tu7ZRrLXr"></div>
-									</div>
+									</div> -->
 									<div class="btn-holder">
 										<button type="submit" id="quick-contact-form-submit" name="quick-contact-form-submit" class="button button-xlarge button-rounded nomargin"
 										 value="submit"> שלח!</button>
@@ -625,19 +625,13 @@
 						============================================= -->
 	<div id="gotoTop" class="icon-angle-up"></div>
 
-	<!--build:js js/main.min.js -->	
+	<!--build:js js/main.min.js async defer -->	
 	
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/plugins.js"></script>
 	<script type="text/javascript" src="js/functions.js"></script>
 	
 	<!-- endbuild -->
-
-	<script>
-		$(function () {
-			$("#side-navigation").tabs({ show: { effect: "fade", duration: 400 } });
-		});
-	</script>
 
 </body>
 
