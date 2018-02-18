@@ -24,14 +24,14 @@
 
 .dark #header.full-header #header-wrap:not(.not-dark) #logo,
 #header.full-header.dark #header-wrap:not(.not-dark) #logo {
-	border-left-color: rgba(255,255,255,0.15);
-	border-right-color: transparent;
+	border-left: none;
+	border-right: none;
 }
 
 .dark #header.transparent-header.full-header:not(.sticky-header) #header-wrap:not(.not-dark) #logo,
 #header.transparent-header.full-header.dark:not(.sticky-header) #header-wrap:not(.not-dark) #logo {
-	border-left-color: rgba(255,255,255,0.2);
-	border-right-color: transparent;
+	border-left: none;
+	border-right: none;
 }
 
 .dark #header.full-header #header-wrap:not(.not-dark) #primary-menu > ul,
