@@ -1,4 +1,79 @@
 {
+    "oct17": [
+        {
+            "name": "Swalla",
+            "creators": [
+                "Shahar",
+                "Ofir",
+                "Ofir",
+                "Avinoam"
+            ],
+            "gitHub": "https://github.com/ofirb25/swalla-front",
+            "link": "http://swalla.herokuapp.com/",
+            "subtitle": "Khaot like app, Build a multyplayer quizz",
+            "thumbnail4x3": "./images/projs/4x3/swalla4x3.png",
+            "thumbnail16x9": "./images/projs/swalla.png",
+            "skills": [
+                "HTML",
+                "CSS",
+                "SCSS",
+                "Javascript",
+                "Vuejs",
+                "Vuex (state management)",
+                "Socket.io",
+                "REST API with Node.js & Mongodb",
+                "Facebook Login"
+            ],
+            "desc": "Interactive multyplayer quizz (it’s like Khaot), Build a quiz and invite your friend to play easly."
+        },
+        {
+            "name": "Trivyou",
+            "creators": [
+                "Chen",
+                "Oded",
+                "Sidny"
+            ],
+            "gitHub": "https://github.com/OdedSp/frontend-trivially",
+            "link": "http://trivyou.herokuapp.com",
+            "subtitle": "Khaot like app, Build a multyplayer quizz",
+            "thumbnail4x3": "./images/projs/4x3/trivyou4x3.png",
+            "thumbnail16x9": "./images/projs/trivyou.png",
+            "skills": [
+                "HTML",
+                "CSS",
+                "SCSS",
+                "Javascript",
+                "Vuejs",
+                "Vuex (state management)",
+                "Socket.io",
+                "REST API with Node.js & Mongodb"
+            ],
+            "desc": "Play this exciting arcade trivia game online againt strangers and check how smart your."
+        },{
+            "name": "TeamUp",
+            "creators": [
+                "Shem",
+                "Ben",
+                "Larisa"
+            ],
+            "gitHub": "https://github.com/Shemlevy/TEAMUP-FRONT",
+            "link": "https://teameup.herokuapp.com/#/",
+            "subtitle": "Khaot like app, Build a multyplayer quizz",
+            "thumbnail4x3": "./images/projs/4x3/teamUp4x3.png",
+            "thumbnail16x9": "./images/projs/teamUp.png",
+            "skills": [
+                "HTML",
+                "CSS",
+                "SCSS",
+                "Javascript",
+                "Vuejs",
+                "Vuex (state management)",
+                "Socket.io",
+                "REST API with Node.js & Mongodb"
+            ],
+            "desc": "Play this exciting arcade trivia game online againt strangers and check how smart your."
+        }
+    ],
     "apr17": [
         {
             "name": "Weddix",

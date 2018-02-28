@@ -8,8 +8,8 @@ $listId = 'd69738bf6a';                             //  MailChimp List ID
 // This is an array or target emails
 $toEmails   = array();
 $toEmails[] = array(
-    'email' => 'assaf@misterbit.co.il', // Your Email Address
-    'name' => 'Assaf' // Your Name
+    'email' => 'roni@misterbit.co.il', // Your Email Address
+    'name' => 'Roni' // Your Name
 );
 
 
@@ -64,13 +64,20 @@ if( $botcheck == '' ) {
     $email = isset($email) ? "Email: $email<br><br>" : '';
     $phone = isset($phone) ? "Phone: $phone<br><br>" : '';
     $message = isset($message) ? "Message: $message<br><br>" : '';
+    $excelLine = isset($name) ? "$name, " : '';
+    $excelLine .= isset($email) ? "$email, " : '';
+    $excelLine .= isset($phone) ? "$phone, " : '';
+    $excelLine .= "<br><br>";
+    
+    
+    
 
     foreach ($toEmails as $toemail) {
         $mail->AddAddress($toemail['email'], $toemail['name']);
     }
 
     $referrer = $_SERVER['HTTP_REFERER'] ? '<br><br><br>This Form was submitted from: ' . $_SERVER['HTTP_REFERER'] : '';
-    $body = "$name $email $phone $message $referrer";
+    $body = "$excelLine $name $email $phone $message $referrer";
 
 
 // Runs only when reCaptcha is present in the Contact Form
