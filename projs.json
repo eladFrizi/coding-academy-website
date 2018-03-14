@@ -10,7 +10,7 @@
             ],
             "gitHub": "https://github.com/ofirb25/swalla-front",
             "link": "http://swalla.herokuapp.com/",
-            "subtitle": "Khaot like app, Build a multyplayer quizz",
+            "subtitle": "Kahoot like app, Build a multyplayer quiz",
             "thumbnail4x3": "./images/projs/4x3/swalla4x3.png",
             "thumbnail16x9": "./images/projs/swalla.png",
             "skills": [
@@ -24,18 +24,18 @@
                 "REST API with Node.js & Mongodb",
                 "Facebook Login"
             ],
-            "desc": "Interactive multyplayer quizz (it’s like Khaot), Build a quiz and invite your friend to play easly."
+            "desc": "Interactive multyplayer quiz (it’s like Kahoot). Easily build a quiz and invite your friends to play."
         },
         {
             "name": "Trivyou",
             "creators": [
                 "Chen",
                 "Oded",
-                "Sidny"
+                "Sidney"
             ],
             "gitHub": "https://github.com/OdedSp/frontend-trivially",
             "link": "http://trivyou.herokuapp.com",
-            "subtitle": "Khaot like app, Build a multyplayer quizz",
+            "subtitle": "Arcade trivia game, your new addiction.",
             "thumbnail4x3": "./images/projs/4x3/trivyou4x3.png",
             "thumbnail16x9": "./images/projs/trivyou.png",
             "skills": [
@@ -48,7 +48,7 @@
                 "Socket.io",
                 "REST API with Node.js & Mongodb"
             ],
-            "desc": "Play this exciting arcade trivia game online againt strangers and check how smart your."
+            "desc": "Play this exciting arcade trivia game online againt strangers and check how smart you are."
         },{
             "name": "TeamUp",
             "creators": [
@@ -58,7 +58,7 @@
             ],
             "gitHub": "https://github.com/Shemlevy/TEAMUP-FRONT",
             "link": "https://teameup.herokuapp.com/#/",
-            "subtitle": "Khaot like app, Build a multyplayer quizz",
+            "subtitle": "Start to move with new freinds.",
             "thumbnail4x3": "./images/projs/4x3/teamUp4x3.png",
             "thumbnail16x9": "./images/projs/teamUp.png",
             "skills": [
@@ -71,7 +71,7 @@
                 "Socket.io",
                 "REST API with Node.js & Mongodb"
             ],
-            "desc": "Play this exciting arcade trivia game online againt strangers and check how smart your."
+            "desc": "Arrange sport matches and discover new friends nearby! A social network based on location to manage sport events and clubs."
         }
     ],
     "apr17": [

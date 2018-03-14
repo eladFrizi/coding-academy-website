@@ -8,8 +8,8 @@ $listId = 'd69738bf6a';                             //  MailChimp List ID
 // This is an array or target emails
 $toEmails   = array();
 $toEmails[] = array(
-    'email' => 'roni@misterbit.co.il', // Your Email Address
-    'name' => 'Roni' // Your Name
+    'email' => 'assaf@misterbit.co.il', // Your Email Address
+    'name' => 'Assaf' // Your Name
 );
 
 
@@ -47,7 +47,7 @@ $email     = $_POST['quick-contact-form-email'];
 $phone     = $_POST['quick-contact-form-phone'];
 $botcheck  = $_POST['quick-contact-form-botcheck'];
 $message   = $_POST['quick-contact-form-message'];
-
+$excelLine = "$name, $phone, $email <br><br>";
 
 $subject = 'New Contact from Coding Academy';
 
@@ -64,10 +64,6 @@ if( $botcheck == '' ) {
     $email = isset($email) ? "Email: $email<br><br>" : '';
     $phone = isset($phone) ? "Phone: $phone<br><br>" : '';
     $message = isset($message) ? "Message: $message<br><br>" : '';
-    $excelLine = isset($name) ? "$name, " : '';
-    $excelLine .= isset($email) ? "$email, " : '';
-    $excelLine .= isset($phone) ? "$phone, " : '';
-    $excelLine .= "<br><br>";
     
     
     
