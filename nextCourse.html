@@ -41,9 +41,7 @@
 	<!-- Stylesheets
 	============================================= -->
 	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
-	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic"
-	rel="stylesheet" type="text/css" />
-   <link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Secular+One|Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet">
 
 		<!--build:css styles.min.css--> 	
 
@@ -63,7 +61,13 @@
 	<link rel="stylesheet" href="ca-style.css" type="text/css" />
 		<!--endbuild-->
 
+	<!--build:js js/main.min.js async defer -->	
+		
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
 
+	<!-- endbuild -->
 
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -71,7 +75,7 @@
 	<!-- Document Title
 	============================================= -->
 	<!-- Add Your favicon here -->
-	<link rel="icon" href="images/icons/favicon.ico">
+	<link rel="icon" href="images/favicon.ico">
 	<title>Coding Academy- ללמוד לתכנת</title>
 
 </head>
@@ -648,20 +652,6 @@
 	<!-- Go To Top
 						============================================= -->
 	<div id="gotoTop" class="icon-angle-up"></div>
-
-	<!--build:js js/main.min.js -->	
-	
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/plugins.js"></script>
-	<script type="text/javascript" src="js/functions.js"></script>
-	
-	<!-- endbuild -->
-
-	<script>
-		$(function () {
-			$("#side-navigation").tabs({ show: { effect: "fade", duration: 400 } });
-		});
-	</script>
 
 </body>
 

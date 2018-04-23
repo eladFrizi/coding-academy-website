@@ -47,7 +47,7 @@ $email     = $_POST['quick-contact-form-email'];
 $phone     = $_POST['quick-contact-form-phone'];
 $botcheck  = $_POST['quick-contact-form-botcheck'];
 $message   = $_POST['quick-contact-form-message'];
-
+$excelLine = "$name, $phone, $email <br><br>";
 
 $subject = 'Learning to code in 12 weeks with Coding Academy';
 
@@ -64,13 +64,16 @@ if( $botcheck == '' ) {
     $email = isset($email) ? "Email: $email<br><br>" : '';
     $phone = isset($phone) ? "Phone: $phone<br><br>" : '';
     $message = isset($message) ? "Message: $message<br><br>" : '';
+    
+    
+    
 
     foreach ($toEmails as $toemail) {
         $mail->AddAddress($toemail['email'], $toemail['name']);
     }
 
     $referrer = $_SERVER['HTTP_REFERER'] ? '<br><br><br>This Form was submitted from: ' . $_SERVER['HTTP_REFERER'] : '';
-    $body = "$name $email $phone $message $referrer";
+    $body = "$excelLine $name $email $phone $message $referrer";
 
 
 // Runs only when reCaptcha is present in the Contact Form

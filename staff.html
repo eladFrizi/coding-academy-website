@@ -61,6 +61,25 @@
 	<link rel="stylesheet" href="ca-style.css" type="text/css" />
 	<!-- endbuild -->
 
+	<style>
+		#logo {
+			width: 115px;
+		}
+
+		.sticky-header #logo {
+			width: 107px;
+		}
+	</style>
+
+	<!-- External JavaScripts
+	============================================= -->
+
+	<!--build:js js/main.min.js async defer -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+	<!-- endbuild -->
+
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 
@@ -438,7 +457,7 @@
 						</div>
 
 						<!-- בלוגים -->
-						<div class="col_one_third">
+						<div class="col_one_third blog-posts-container">
 
 							<div class="widget widget_links clearfix">
 
@@ -452,52 +471,51 @@
 
 							</div>
 
-						</div>
+							<div>
 
-						<div class="col_one_third col_last">
-
-							<!-- פוסטים אחרונים -->
-							<div class="widget clearfix">
-								<h4>פוסטים אחרונים</h4>
-
-								<div class="post-list-footer">
-									<div class="spost clearfix">
-										<div class="entry-c">
-											<div class="entry-title">
-												<h4><a target="_blank" href="https://medium.com/@vyaron/the-returning-of-the-rich-client-aa545ced5a9a#.e9414ca8l">The returning of the rich client</a></h4>
+								<!-- פוסטים אחרונים -->
+								<div class="widget clearfix">
+									<h4>פוסטים אחרונים</h4>
+	
+									<div class="post-list-footer">
+										<div class="spost clearfix">
+											<div class="entry-c">
+												<div class="entry-title">
+													<h4><a target="_blank" href="https://medium.com/@vyaron/the-returning-of-the-rich-client-aa545ced5a9a#.e9414ca8l">The returning of the rich client</a></h4>
+												</div>
+												<ul class="entry-meta">
+													<li>8th March 2017</li>
+												</ul>
 											</div>
-											<ul class="entry-meta">
-												<li>8th March 2017</li>
-											</ul>
 										</div>
-									</div>
-
-									<div class="spost clearfix">
-										<div class="entry-c">
-											<div class="entry-title">
-												<h4><a target="_blank" href="https://netbasal.com/understanding-viewchildren-contentchildren-and-querylist-in-angular-896b0c689f6e#.kmb1s4h5n">Understanding ViewChildren, ContentChildren, and QueryList in Angular</a></h4>
+	
+										<div class="spost clearfix">
+											<div class="entry-c">
+												<div class="entry-title">
+													<h4><a target="_blank" href="https://netbasal.com/understanding-viewchildren-contentchildren-and-querylist-in-angular-896b0c689f6e#.kmb1s4h5n">Understanding ViewChildren, ContentChildren, and QueryList in Angular</a></h4>
+												</div>
+												<ul class="entry-meta">
+													<li>14th March 2017</li>
+												</ul>
 											</div>
-											<ul class="entry-meta">
-												<li>14th March 2017</li>
-											</ul>
 										</div>
-									</div>
-
-									<div class="spost clearfix">
-										<div class="entry-c">
-											<div class="entry-title">
-												<h4><a target="_blank" href="http://slides.com/nadavsinai/css#/">CSS and rendering</a></h4>
+	
+										<div class="spost clearfix">
+											<div class="entry-c">
+												<div class="entry-title">
+													<h4><a target="_blank" href="http://slides.com/nadavsinai/css#/">CSS and rendering</a></h4>
+												</div>
+												<ul class="entry-meta">
+													<li>25th August 2016</li>
+												</ul>
 											</div>
-											<ul class="entry-meta">
-												<li>25th August 2016</li>
-											</ul>
 										</div>
 									</div>
 								</div>
+	
 							</div>
 
 						</div>
-
 					</div>
 
 					<div class="col_one_third col_last">
@@ -597,22 +615,7 @@
 	============================================= -->
 	<div id="gotoTop" class="icon-angle-up"></div>
 
-	<!-- External JavaScripts
-	============================================= -->
-	<!--build:js js/main.min.js -->
-
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/plugins.js"></script>
-
-
-	<script type="text/javascript" src="js/functions.js"></script>
-		<!-- endbuild -->
-
-	<script>
-		$(function () {
-			$("#side-navigation").tabs({ show: { effect: "fade", duration: 400 } });
-		});
-	</script>
+	
 
 </body>
 
