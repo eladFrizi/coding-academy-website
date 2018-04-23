@@ -3583,7 +3583,6 @@ var SEMICOLON = SEMICOLON || {};
 		},
 
 		quickContact: function () {
-
 			if (!$().validate) {
 				console.log('quickContact: Form Validate not Defined.');
 				return true;
@@ -3606,7 +3605,10 @@ var SEMICOLON = SEMICOLON || {};
 
 				element.find('form').validate({
 					submitHandler: function (form) {
-
+						if (!grecaptcha.getResponse()){
+							document.querySelector('.g-recaptcha > div > div').style.outline = '3px solid red'
+							return false
+						}
 						elementResult.hide();
 						$(form).animate({ opacity: 0.4 });
 
@@ -3615,7 +3617,7 @@ var SEMICOLON = SEMICOLON || {};
 								defButtonText = defButton.html();
 
 							defButton.html('<i class="icon-line-loader icon-spin nomargin"></i>');
-						} else {
+						} else {	
 							$(form).find('.form-process').fadeIn();
 						}
 
@@ -3628,14 +3630,6 @@ var SEMICOLON = SEMICOLON || {};
 									// after the contact from  successfuly submited,
 									// we push the user to the thank you page. 
 									window.location.assign('http://coding-academy.org/thank.html')
-									// var userUrl = window.location.pathname;									
-									// if(userUrl.includes('1')){
-									// 	window.location.assign('http://coding-academy.org/thanks1.html')
-									// } else if(userUrl.includes('2')){
-									// 	window.location.assign('http://coding-academy.org/thanks2.html')										
-									// } else {
-									// 	window.location.assign("http://coding-academy.org/thank.html")
-									// }
 								}
 								$(form).animate({ opacity: 1 });
 								if (elementLoader == 'button') {
@@ -3659,7 +3653,10 @@ var SEMICOLON = SEMICOLON || {};
 									elementResult.attr('data-notify-type', data.alert).attr('data-notify-msg', data.message).html('');
 									SEMICOLON.widget.notifications(elementResult);
 								}
-								if ($(form).find('.g-recaptcha').children('div').length > 0) { grecaptcha.reset(); }
+								if ($(form).find('.g-recaptcha').children('div').length > 0) {
+									 grecaptcha.reset(); 
+									 console.log('in the gcapthca reset')
+									}
 							}
 						});
 					}

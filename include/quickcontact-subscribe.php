@@ -8,7 +8,7 @@ $listId = 'd69738bf6a';                             //  MailChimp List ID
 // This is an array or target emails
 $toEmails   = array();
 $toEmails[] = array(
-    'email' => 'assaf@misterbit.co.il', // Your Email Address
+    'email' => 'okc.elad.35"gmail.com', // Your Email Address
     'name' => 'Assaf' // Your Name
 );
 
@@ -49,7 +49,7 @@ $botcheck  = $_POST['quick-contact-form-botcheck'];
 $message   = $_POST['quick-contact-form-message'];
 
 
-$subject = 'New Contact from Coding Academy';
+$subject = 'Learning to code in 12 weeks with Coding Academy';
 
 if( isset( $_GET['list'] ) AND $_GET['list'] != '' ) {
     $listId = $_GET['list'];
