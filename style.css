@@ -12669,7 +12669,7 @@ label.checkbox {
 body:not(.no-transition) #wrapper,
 .animsition-overlay {
   position: relative;
-  opacity: 0;
+  /* opacity: 0; */
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }

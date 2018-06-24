@@ -11,7 +11,7 @@ gulp.task('cssjs', function () {
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
     // Minifies only if it's a CSS file
-    .pipe(gulpIf('*.css', cssnano()))
+    // .pipe(gulpIf('*.css', cssnano()))
     .pipe(gulp.dest('dist'))
 });
 

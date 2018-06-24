@@ -1,0 +1,28 @@
+.background-class.visible{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('./images/courseLife/class.jpg');
+    background-position: center top;
+}
+
+.background-yoga.visible {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('./images/courseLife/yoga.jpg'); 
+    background-position: center top;
+}
+
+.backgorund-trudbar.visible{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/courseLife/trubador.jpg'); 
+    background-position: center top;
+}
+
+.background-third.visible {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/courseLife/third.jpg'); 
+    background-position: center top;
+}
+.background-first.visible {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/courseLife/first.jpg'); 
+    background-position: center top;
+}
+.background-angular.visible {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('images/courseLife/angular.jpg');
+    background-position: center top;
+}
+
