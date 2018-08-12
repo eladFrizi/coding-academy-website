@@ -1,4 +1,90 @@
 {
+    "may18":[
+        {
+            "name": "WeRent",
+            "creators": ["Shiran","Shani","Tomer"],
+            "gitHub":"https://github.com/",
+            "subtitle" : "Build beautiful pages in just few moments",
+            "link" :  "https://rentapp-sts.herokuapp.com/",
+            "thumbnail4x3": "./images/projs/4x3/weRent4x3.png",
+            "thumbnail16x9": "./images/projs/pageBuilder.png",
+            "skills": [
+                "HTML",
+                "CSS",
+                "SCSS",
+                "Javascript",
+                "Vuejs",
+                "Vuex (state management)",
+                "Socket.io",
+                "REST API with Node.js & Mongodb"
+            ],
+            "desc": "Marketplace for sublets."
+        },
+        {
+            "name": "Page Builder",
+            "creators": ["Rami", "Shuvy", "Matan"],
+            "gitHub":"https://github.com/",
+            "subtitle" : "Build beautiful pages in just few moments",
+            "link" :  "https://vue-page-builder.herokuapp.com/",
+            "thumbnail4x3": "./images/projs/4x3/pageBuilder4x3.png",
+            "thumbnail16x9": "./images/projs/pageBuilder.png",
+            "skills": [
+                "HTML",
+                "CSS",
+                "SCSS",
+                "Javascript",
+                "Vuejs",
+                "Vuex (state management)",
+                "Socket.io",
+                "REST API with Node.js & Mongodb"
+            ],
+            "desc": "Powerful website generator that let you control every aspect of the your site's UI."
+        },
+        {
+            "name": "Swap & Play",
+            "creators" : ["Adi","Liron","Tally"],
+            "gitHub": "https://github.com/",
+            "link": "https://swapandplay.herokuapp.com/",
+            "subtitle" : "Swap, play and discover new games",
+            "thumbnail4x3": "./images/projs/4x3/swapnplay4x3.png",
+            "thumbnail16x9": "./images/projs/swapnplay.png",
+            "skills": [
+                "HTML",
+                "CSS",
+                "SCSS",
+                "Javascript",
+                "Vuejs",
+                "Vuex (state management)",
+                "Socket.io",
+                "REST API with Node.js & Mongodb"
+            ],
+            "desc" : "Marketplace that will help you discover new games without spending money."
+
+        }
+    ],
+    "feb18" : [
+        {
+            "name":"Liftoff",
+            "creators" : ["Tamir", "Ofir", "Yeusha"],
+            "gitHub": "https://github.com/",
+            "link": "https://liftoff-ots.herokuapp.com/",
+            "subtitle": "Get your Meteor project off the ground",
+            "thumbnail4x3": "./images/projs/4x3/liftoff4x3.png",
+            "thumbnail16x9": "./images/projs/liftoff.png",
+            "skills": [
+                "HTML",
+                "CSS",
+                "SCSS",
+                "Javascript",
+                "Vuejs",
+                "Vuex (state management)",
+                "Socket.io",
+                "REST API with Node.js & Mongodb"
+            ],
+            "desc": "Platform to crowdfunding  projects easily and quickly."
+
+        }
+    ],
     "oct17": [
         {
             "name": "Swalla",
@@ -48,7 +134,7 @@
                 "Socket.io",
                 "REST API with Node.js & Mongodb"
             ],
-            "desc": "Play this exciting arcade trivia game online againt strangers and check how smart you are."
+            "desc": "Play this exciting arcade trivia game online against strangers and check how smart you are."
         },{
             "name": "TeamUp",
             "creators": [

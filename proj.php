@@ -1,4 +1,3 @@
-    
     <!DOCTYPE html>
     <?php
     $date =  $_GET["date"];
