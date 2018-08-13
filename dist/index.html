@@ -41,13 +41,12 @@
 	============================================= -->
 	<link href="https://fonts.googleapis.com/css?family=Secular+One|Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet">
 	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="css/slider-background.css">
 
 	<link rel="stylesheet" href="styles.min.css">
 
 	<!-- External JavaScripts
 	============================================= -->
-
-	<script src="js/main.min.js" async defer></script>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -181,7 +180,8 @@
 				<div class="swiper-container swiper-parent">
 					<div class="swiper-wrapper">
 
-						<div class="swiper-slide dark" style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('./images/courseLife/class.jpg'); background-position: center top;">
+						<!-- <div class="swiper-slide dark background-class" style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('./images/courseLife/class.jpg'); background-position: center top;"> -->
+						<div class="swiper-slide dark background-class visible" >
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
 									<div>
@@ -194,7 +194,8 @@
 							</div>
 						</div>
 
-						<div class="swiper-slide dark" style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('./images/courseLife/yoga.jpg'); background-position: center top;">
+						<!-- <div class="swiper-slide dark" style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('./images/courseLife/yoga.jpg'); background-position: center top;"> -->
+						<div class="swiper-slide dark background-yoga back-lazy" >
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
 									<h2 data-caption-animate="fadeInUp" style="font-style: italic">?יש לך כבר מקצוע</h2>
@@ -248,8 +249,7 @@
 							</div>
 						</div>
 
-						<div class="swiper-slide dark" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
-							   url('images/courseLife/angular.jpg'); background-position: center top;">
+						<div class="swiper-slide dark background-angular back-lazy" >
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
 									<h2 data-caption-animate="fadeInUp" style="font-style: italic">Coding is coming</h2>
@@ -561,9 +561,9 @@
 							</li>
 							<li>
 								<a>
-									<img class="lazy" data-src="images/team/roni.jpg" src="images/staff-placeholder.png" alt="Roni Krakover רוני קרקובר">
-									<h5>רוני קרקובר</h5>
-									<h6>מנכ"לית</h6>
+									<img class="lazy" data-src="images/team/assaf.jpg" src="images/staff-placeholder.png" alt="assaf">
+									<h5>אסף מרגלית</h5>
+									<h6>מנכ"ל</h6>
 									<a href="https://www.linkedin.com/in/ronikrakover/" target="_blank" class=".social-icon.si-small si-rounded si-colored si-linkedin nobottommargin" style=" width:32px; height: 32px; text-align: center; line-height:31px;">
 										<i class="icon-linkedin"></i>
 
@@ -572,9 +572,9 @@
 							</li>
 							<li>
 								<a>
-									<img class="lazy" data-src="images/team/assaf.jpg" src="images/staff-placeholder.png" alt="assaf">
-									<h5>אסף מרגלית</h5>
-									<h6>סמנכ"ל פיתוח עסקי</h6>
+									<img class="lazy" data-src="images/team/reut.jpg" src="images/staff-placeholder.png" alt="assaf">
+									<h5>רעות נתן</h5>
+									<h6>מנהלת מכירות</h6>
 									<a href="https://www.linkedin.com/in/assaf-margalit-4115185/" target="_blank" class=".social-icon.si-small si-rounded si-colored si-linkedin nobottommargin" style=" width:32px; height: 32px; text-align: center; line-height:31px;">
 										<i class="icon-linkedin"></i>
 
@@ -691,7 +691,7 @@
 							<!-- פוסטים אחרונים -->
 							<div>
 								<h4>פוסטים אחרונים</h4>
-
+								<div class="post-list-footer">
 								<div class="spost clearfix">
 									<div class="entry-c">
 										<div class="entry-title">
@@ -717,7 +717,7 @@
 									</div>
 								</div>
 
-								<div class="post-list-footer">
+
 									<div class="spost clearfix">
 										<div class="entry-c">
 											<div class="entry-title">
@@ -874,6 +874,9 @@
 
 	<!-- Footer Scripts
 	============================================= -->
+		<script src="js/main.min.js" async defer></script>
+	
+	
 
 	<script>
 		// $(function () {
@@ -883,16 +886,22 @@
 		function showVideos() {
 			console.log('show videos run')
 			var iframesNodeList = document.querySelector('#testimonials').querySelectorAll('iframe');
-			var iframes = Array.from(iframesNodeList);
-			iframes.forEach(iframe => {
+			for (var i = 0; i < iframesNodeList.length; i++){
+				var iframe  = iframesNodeList[i]
 				src = iframe.getAttribute('data-src');
 				iframe.setAttribute('src', src);
-
-			})
+			}
 		}
 		document.addEventListener("DOMContentLoaded", function () {
+			setTimeout(function (){
+				var lazyBackgrounds = document.querySelectorAll('.back-lazy')
+				for (var i = 0; i <lazyBackgrounds.length; i++ ) {
+					var lazyBack = lazyBackgrounds[i]
+					lazyBack.classList.add('visible')
+				}
+				console.log({lazyBackgrounds})
+			},1000)
 			var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
-
 			if ("IntersectionObserver" in window) {
 				let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
 					entries.forEach(function (entry) {
@@ -902,6 +911,8 @@
 							// lazyImage.srcset = lazyImage.dataset.srcset;
 							lazyImage.classList.remove("lazy");
 							lazyImageObserver.unobserve(lazyImage);
+
+
 						}
 					});
 				});
@@ -910,7 +921,12 @@
 					lazyImageObserver.observe(lazyImage);
 				});
 			} else {
-				// Possibly fall back to a more compatible method here
+				// if IntersectionObserver is not suppurted just change the src. 
+				for (var i = 0; i < lazyImages.length; i++){
+					var lazyImage = lazyImages[i]
+					lazyImage.src = lazyImage.dataset.src;
+					lazyImage.classList.remove("lazy");
+				}
 			}
 		});
 

@@ -2749,6 +2749,7 @@ var SEMICOLON = SEMICOLON || {};
 	// -------------- our addition - mySlider (middle of page) start --------------------------- //
 	SEMICOLON.mySlider = {
 		init: function() {
+			
 			SEMICOLON.mySlider.sliderParallaxDimensions();
 			SEMICOLON.mySlider.sliderRun();
 			SEMICOLON.mySlider.captionPosition();
@@ -5422,6 +5423,7 @@ var SEMICOLON = SEMICOLON || {};
 
 	SEMICOLON.documentOnReady = {
 		init: function() {
+			
 			SEMICOLON.initialize.init();
 			SEMICOLON.header.init();
 			if ($slider.length > 0) {
@@ -5591,7 +5593,7 @@ var SEMICOLON = SEMICOLON || {};
 		$parallaxPortfolioEl = $('.portfolio-parallax').find('.portfolio-image'),
 		$textRotaterEl = $('.text-rotater'),
 		$cookieNotification = $('#cookie-notification');
-
+	
 	$(document).ready(SEMICOLON.documentOnReady.init);
 	$window.load(SEMICOLON.documentOnLoad.init);
 	$window.on('resize', SEMICOLON.documentOnResize.init);

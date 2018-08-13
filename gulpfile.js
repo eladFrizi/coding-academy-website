@@ -15,6 +15,12 @@ gulp.task('cssjs', function () {
     .pipe(gulp.dest('dist'))
 });
 
+gulp.task('simple', function (){
+  return gulp.src('*.+(html|php)')
+  .pipe(gulp.dest('dist'))
+    
+})
+
 gulp.task('images', function () {
   return gulp.src('images/**/*.+(png|jpg|gif|svg|ico)')
     .pipe(imagemin())
@@ -30,6 +36,15 @@ gulp.task('swipercss', function () {
   return gulp.src('css/swiper.css')
     .pipe(gulp.dest('dist/css'))
 })
+
+
+gulp.task('slider-background', function () {
+  return gulp.src('css/slider-background.css')
+    .pipe(gulp.dest('dist/css'))
+})
+
+
+
 
 gulp.task('data', function () {
   return gulp.src('projs.json')
@@ -48,4 +63,4 @@ gulp.task('showcase', function(){
   //     .pipe(gulp.dest('dist'))
   // });
 
-  gulp.task('build', ['showcase','data','swipercss','fonts','images','cssjs'])
+  gulp.task('build', ['showcase','data','swipercss','fonts', 'cssjs','slider-background'])

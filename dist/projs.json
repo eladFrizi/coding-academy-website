@@ -4,10 +4,10 @@
             "name": "WeRent",
             "creators": ["Shiran","Shani","Tomer"],
             "gitHub":"https://github.com/",
-            "subtitle" : "Build beautiful pages in just few moments",
+            "subtitle" : "Rent anything from anyone",
             "link" :  "https://rentapp-sts.herokuapp.com/",
             "thumbnail4x3": "./images/projs/4x3/weRent4x3.png",
-            "thumbnail16x9": "./images/projs/pageBuilder.png",
+            "thumbnail16x9": "./images/projs/weRent.png",
             "skills": [
                 "HTML",
                 "CSS",
@@ -18,7 +18,7 @@
                 "Socket.io",
                 "REST API with Node.js & Mongodb"
             ],
-            "desc": "Marketplace for sublets."
+            "desc": "Marketplace that gives you the power to rent anything you might need, and to rent out the stuff you don't."
         },
         {
             "name": "Page Builder",
@@ -38,7 +38,7 @@
                 "Socket.io",
                 "REST API with Node.js & Mongodb"
             ],
-            "desc": "Powerful website generator that let you control every aspect of the your site's UI."
+            "desc": "Powerful website builder that let you control every aspect of your site's UI."
         },
         {
             "name": "Swap & Play",
