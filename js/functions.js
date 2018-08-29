@@ -1,5 +1,4 @@
 var $ = jQuery.noConflict();
-
 (function putChaptchaCallback() {
 	// document.querySelector('.g-recaptcha')['data-callback'] =
 	// 	'handleCaptchaSuccess';
@@ -2162,7 +2161,6 @@ var SEMICOLON = SEMICOLON || {};
 			});
 		}
 	};
-
 	SEMICOLON.slider = {
 		init: function() {
 			SEMICOLON.slider.sliderParallaxDimensions();
@@ -2284,7 +2282,6 @@ var SEMICOLON = SEMICOLON || {};
 
 				var elementNavNext = '#slider-arrow-right',
 					elementNavPrev = '#slider-arrow-left';
-
 				swiperSlider = new Swiper(element.find('.swiper-parent'), {
 					direction: elementDirection,
 					speed: Number(elementSpeed),
@@ -2749,10 +2746,42 @@ var SEMICOLON = SEMICOLON || {};
 	// -------------- our addition - mySlider (middle of page) start --------------------------- //
 	SEMICOLON.mySlider = {
 		init: function() {
-			
-			SEMICOLON.mySlider.sliderParallaxDimensions();
-			SEMICOLON.mySlider.sliderRun();
-			SEMICOLON.mySlider.captionPosition();
+			function runSlider(){
+				SEMICOLON.mySlider.sliderParallaxDimensions();
+				SEMICOLON.mySlider.sliderRun();
+				SEMICOLON.mySlider.captionPosition();
+			}
+			// $('.swiper-slide').each(function (index,$el){
+			// 	console.log(index,$el)
+			// })
+			var elSlides = document.querySelectorAll('.swiper-slide')
+			elSlides = [].slice.call(elSlides)
+			// remove the first element becuase he is already visible
+			elSlides.shift()
+			var uploadedImgCount = 0
+			for (var i = 0; i < elSlides.length; i++){
+				var currElSlide = elSlides[i]
+				var elImg = new Image()
+				elImg.src = currElSlide.dataset.bgsrc;
+				elImg.onload = function (){
+					console.log(this.src)
+					uploadedImgCount++
+					console.log({uploadedImgCount})
+					// if all image are loaded i change the slides background and then run the slider.
+					if (uploadedImgCount === elSlides.length) {
+						for (var j = 0; j < elSlides.length; j++){
+							var bgImageCoverFor = 'linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),'
+							var bg = bgImageCoverFor + ' url('+ elSlides[j].dataset.bgsrc+ ')'
+							elSlides[j].style.backgroundImage = bg
+						}
+						runSlider()
+					}
+				}
+			}
+			// var x = $('.background-yoga').data('data-bgsrc')
+			// var x = document.querySelector('.background-yoga').dataset.bgsrc
+			// console.log({x})
+			// $('<img/>').attr('src')
 		},
 
 		sliderParallaxDimensions: function() {

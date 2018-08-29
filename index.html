@@ -197,7 +197,7 @@
 					<div class="swiper-wrapper">
 
 						<!-- <div class="swiper-slide dark background-class" style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('./images/courseLife/class.jpg'); background-position: center top;"> -->
-						<div class="swiper-slide dark background-class visible" >
+						<div class="swiper-slide dark background-class visible" data-bgsrc="./images/courseLife/class.jpg">
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
 									<div>
@@ -211,7 +211,7 @@
 						</div>
 
 						<!-- <div class="swiper-slide dark" style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('./images/courseLife/yoga.jpg'); background-position: center top;"> -->
-						<div class="swiper-slide dark background-yoga back-lazy" >
+						<div class="swiper-slide dark background-yoga back-lazy" data-bgsrc="./images/courseLife/yoga.jpg">
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
 									<h2 data-caption-animate="fadeInUp" style="font-style: italic">?יש לך כבר מקצוע</h2>
@@ -223,7 +223,7 @@
 
 						<!-- <div class="swiper-slide dark" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
 							   url('images/courseLife/yaron.jpg'); background-position: center top;"> -->
-						<div class="swiper-slide dark background-yaron back-lazy">
+						<div class="swiper-slide dark background-yaron back-lazy" data-bgsrc="./images/courseLife/yaron.jpg">
 
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
@@ -234,7 +234,7 @@
 							</div>
 						</div>
 
-						<div class="swiper-slide dark backgorund-trudbar back-lazy" >
+						<div class="swiper-slide dark backgorund-trubador back-lazy" data-bgsrc="./images/courseLife/trubador.jpg">
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
 									<h2 data-caption-animate="fadeInUp" style="font-style: italic">?יש לך רעיון מדהים</h2>
@@ -244,7 +244,7 @@
 							</div>
 						</div>
 
-						<div class="swiper-slide dark background-third back-lazy">
+						<div class="swiper-slide dark background-third back-lazy" data-bgsrc="./images/courseLife/third.jpg">
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
 									<h2 data-caption-animate="fadeInUp" style="font-style: italic">הצטרפ/י אלינו</h2>
@@ -254,7 +254,7 @@
 							</div>
 						</div>
 
-						<div class="swiper-slide dark background-first back-lazy" >
+						<div class="swiper-slide dark background-first back-lazy" data-bgsrc="./images/courseLife/first.jpg">
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
 									<h2 data-caption-animate="fadeInUp" style="font-style: italic">המסלול לאמיצים</h2>
@@ -264,7 +264,7 @@
 							</div>
 						</div>
 
-						<div class="swiper-slide dark background-angular back-lazy" >
+						<div class="swiper-slide dark background-angular back-lazy" data-bgsrc="./images/courseLife/angular.jpg">
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
 									<h2 data-caption-animate="fadeInUp" style="font-style: italic">Coding is coming</h2>
@@ -912,14 +912,14 @@
 			}
 		}
 		document.addEventListener("DOMContentLoaded", function () {
-			setTimeout(function (){
-				var lazyBackgrounds = document.querySelectorAll('.back-lazy')
-				for (var i = 0; i <lazyBackgrounds.length; i++ ) {
-					var lazyBack = lazyBackgrounds[i]
-					lazyBack.classList.add('visible')
-				}
-				console.log({lazyBackgrounds})
-			},1000)
+			// setTimeout(function (){
+			// 	var lazyBackgrounds = document.querySelectorAll('.back-lazy')
+			// 	for (var i = 0; i <lazyBackgrounds.length; i++ ) {
+			// 		var lazyBack = lazyBackgrounds[i]
+			// 		lazyBack.classList.add('visible')
+			// 	}
+			// 	console.log({lazyBackgrounds})
+			// },1000)
 			var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
 			if ("IntersectionObserver" in window) {
 				let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
