@@ -1990,6 +1990,8 @@ body.top-search-open #top-account {
   -webkit-perspective: 1000px;
   -webkit-backface-visibility: hidden;
 }
+
+/*! uncss:ignore */
 #header.sticky-header #header-wrap {
   position: fixed;
   top: 0;
@@ -10367,6 +10369,8 @@ body:not(.device-touch) .rounded-skill {
 /* ----------------------------------------------------------------
 	Owl Carousel CSS
 -----------------------------------------------------------------*/
+/*! uncss:ignore start */
+
 .owl-carousel .animated {
   -webkit-animation-duration: 1000ms;
   animation-duration: 1000ms;
@@ -10469,9 +10473,7 @@ body:not(.device-touch) .rounded-skill {
   -ms-user-select: none;
   user-select: none;
 }
-.owl-carousel.owl-loaded {
-  display: block;
-}
+
 .owl-carousel.owl-loading {
   opacity: 0;
   display: block;
@@ -10501,6 +10503,7 @@ body:not(.device-touch) .rounded-skill {
 .owl-carousel.owl-rtl {
   direction: rtl;
 }
+
 .owl-carousel.owl-rtl .owl-item {
   float: right;
 }
@@ -10567,6 +10570,8 @@ body:not(.device-touch) .rounded-skill {
 }
 /* Owl Carousel - Controls
 -----------------------------------------------------------------*/
+
+
 .owl-carousel .owl-dots,
 .owl-carousel .owl-nav {
   text-align: center;
@@ -10575,6 +10580,7 @@ body:not(.device-touch) .rounded-skill {
 }
 /* Owl Carousel - Controls - Arrows
 -----------------------------------------------------------------*/
+
 .owl-carousel .owl-nav [class*=owl-] {
   position: absolute;
   top: 50%;
@@ -10611,6 +10617,7 @@ body:not(.device-touch) .rounded-skill {
 .owl-carousel-full .with-carousel-dots .owl-nav [class*=owl-] {
   margin-top: -50px;
 }
+
 .owl-carousel .owl-nav .owl-next {
   left: auto;
   right: -36px;
@@ -10660,6 +10667,8 @@ body:not(.device-touch) .rounded-skill {
 .owl-carousel .owl-dots .owl-dot:hover span {
   opacity: 1;
 }
+/*! uncss:ignore end */
+
 /*-----------------------------------------------------------------------------------
 
 	Shortcodes: overlay.less

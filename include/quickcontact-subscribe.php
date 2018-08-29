@@ -8,10 +8,13 @@ $listId = 'd69738bf6a';                             //  MailChimp List ID
 // This is an array or target emails
 $toEmails   = array();
 $toEmails[] = array(
-    'email' => 'okc.elad.35"gmail.com', // Your Email Address
+    'email' => 'Assaf@misterbit.co.il', // Your Email Address
     'name' => 'Assaf' // Your Name
 );
-
+$toEmails[] = array(
+    'email' => 'eladf@misterbit.co.il', // Your Email Address
+    'name' => 'Elad' // Your Name
+);
 
 // Add this only if you use reCaptcha with your Contact Forms
 $recaptcha_secret = '6Ldm1yIUAAAAAAI1sPRmKtcocv9Fj2wN_C44Sgum'; // Your reCaptcha Secret
@@ -19,6 +22,7 @@ $recaptcha_secret = '6Ldm1yIUAAAAAAI1sPRmKtcocv9Fj2wN_C44Sgum'; // Your reCaptch
 
 
 $mail = new PHPMailer();
+$mail->CharSet = "UTF-8";
 
 
 $isTrusted = $_SERVER["HTTP_REFERER"];
@@ -49,7 +53,27 @@ $botcheck  = $_POST['quick-contact-form-botcheck'];
 $message   = $_POST['quick-contact-form-message'];
 $excelLine = "$name, $phone, $email <br><br>";
 
-$subject = 'Learning to code in 12 weeks with Coding Academy';
+function writeToLog($isSuccess){
+    global $_POST;
+    global $_SERVER;
+    $name      = $_POST['quick-contact-form-name'];
+    $email     = $_POST['quick-contact-form-email'];
+    $phone     = $_POST['quick-contact-form-phone'];
+    $message   = $_POST['quick-contact-form-message'];
+    $url   =  $_SERVER['HTTP_REFERER'];
+    date_default_timezone_set('Asia/Jerusalem');
+    $date = date("Y/m/d");
+    $hour = date('H:i');
+    $line = "$date, $hour, $name, $phone, $email, 'message not inserted', $url, $isSuccess";
+    $log = fopen("contacts-log.txt", "a");
+    fwrite($log, "$line \n");
+    fclose($log);
+}
+
+
+
+$hebrewSubect = "פנייתך אלינו לגבי קורס תכנות ב12 שבועות - קודינג אקדמי";
+$subject ="=?UTF-8?B?".base64_encode($hebrewSubect)."?=";
 
 if( isset( $_GET['list'] ) AND $_GET['list'] != '' ) {
     $listId = $_GET['list'];
@@ -64,9 +88,6 @@ if( $botcheck == '' ) {
     $email = isset($email) ? "Email: $email<br><br>" : '';
     $phone = isset($phone) ? "Phone: $phone<br><br>" : '';
     $message = isset($message) ? "Message: $message<br><br>" : '';
-    
-    
-    
 
     foreach ($toEmails as $toemail) {
         $mail->AddAddress($toemail['email'], $toemail['name']);
@@ -89,6 +110,7 @@ if( $botcheck == '' ) {
 
     $mail->MsgHTML($body);
     $isSent = $mail->Send();
+    writeToLog($isSent);
     if ($isSent) {
         $datacenter = explode('-', $apiKey);
         $submit_url = "https://" . $datacenter[1] . ".api.mailchimp.com/3.0/lists/" . $listId . "/members/";
