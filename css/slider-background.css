@@ -1,3 +1,18 @@
+
+div#page_loader {
+    position: fixed;
+    top: 0;
+    bottom: 0%;
+    left: 0;
+    right: 0%;
+    background-color: white;
+    z-index: 9999;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  
 .background-class.visible{
     background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/courseLife/class.jpg');
     background-position: center top;
@@ -30,3 +45,46 @@
     background-position: center top;
 
 }
+
+.sticky-header > #header-wrap > .container > #logo > a::after {
+    top: 33px;  
+    left: 44px;
+  }
+  
+  /* uncss:ignore */
+  #header-wrap > .container > #logo > a[data-page="staff"]::after,
+  #header-wrap > .container > #logo > a[data-page="proj"]::after
+  {
+    top: 45px;
+    left: 33px;
+  }
+  /* uncss:ignore */
+  .sticky-header > #header-wrap > .container > #logo > a[data-page="staff"]::after,
+  .sticky-header > #header-wrap > .container > #logo > a[data-page="proj"]::after{
+    top: 33px;
+    left: 21px;
+  }
+  /* uncss:ignore */
+  #header-wrap > .container > #logo > a::after{
+    top: 40px;
+    left: 55px;
+  }
+  /* uncss:ignore */
+  @media(max-width: 992px){
+  /* uncss:ignore */
+    #header-wrap{
+      height: 70px;
+    }
+  /* uncss:ignore */
+    #logo img{
+      position: absolute;
+      top: -15px;
+      left: -10px;
+      height: 100px;
+    }
+  /* uncss:ignore */
+    #header-wrap > .container > #logo > a::after{
+      top: 43px;
+      left: 30px;
+    }
+  }

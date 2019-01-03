@@ -76,7 +76,8 @@
 </head>
 
 <body class="stretched rtl" onload="showVideos()">
-
+	
+	
 	<!-- Document Wrapper
 	============================================= -->
 	<div id="wrapper" class="clearfix">
@@ -209,7 +210,6 @@
 								</div>
 							</div>
 						</div>
-
 						<!-- <div class="swiper-slide dark" style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('./images/courseLife/yoga.jpg'); background-position: center top;"> -->
 						<div class="swiper-slide dark background-yoga back-lazy" data-bgsrc="./images/courseLife/yoga.jpg">
 							<div class="container clearfix">
@@ -282,7 +282,6 @@
 					<div id="slider-arrow-right">
 						<i class="icon-angle-right"></i>
 					</div>
-					<!--<div id="slide-number"><div id="slide-number-current"></div><span>/</span><div id="slide-number-total"></div></div>-->
 					<div class="static-btn">
 						<a href="#contact" data-scrollto="#contact" class="button button-xlarge button-rounded"> ליעוץ והרשמה </a>
 					</div>
@@ -309,8 +308,8 @@
 					<div class="container clearfix">
 						<div class="col_one_third nobottommargin flex">
 							<h2>הקורס הקרוב:</h2>
-							<h3>15 באוקטובר 2017
-								<br> ערב היכרות חוויתי ב-1 לאקוטובר
+							<h3> ינואר 2019
+								<br> ערב היכרות חוויתי ב16 לאקוטובר
 								<br>
 								<span>ההרשמה בעיצומה!</span>
 							</h3>
@@ -707,30 +706,30 @@
 							<div>
 								<h4>פוסטים אחרונים</h4>
 								<div class="post-list-footer">
-								<div class="spost clearfix">
-									<div class="entry-c">
-										<div class="entry-title">
-											<h4>
-												<a target="_blank" href="https://medium.com/@vyaron/point-of-vue-angular-is-doomed-react-is-ok-we-deserve-better-fb60652a8cb4">Point of Vue: Angular is doomed, React is OK — We deserve better</a>
-											</h4>
+									<div class="spost clearfix">
+										<div class="entry-c">
+											<div class="entry-title">
+												<h4>
+													<a target="_blank" href="https://medium.com/@vyaron/point-of-vue-angular-is-doomed-react-is-ok-we-deserve-better-fb60652a8cb4">Point of Vue: Angular is doomed, React is OK — We deserve better</a>
+												</h4>
+											</div>
+											<ul class="entry-meta">
+												<li>20th April 2018</li>
+											</ul>
 										</div>
-										<ul class="entry-meta">
-											<li>20th April 2018</li>
-										</ul>
 									</div>
-								</div>
-								<div class="spost clearfix">
-									<div class="entry-c">
-										<div class="entry-title">
-											<h4>
-												<a target="_blank" href="https://netbasal.com/understanding-viewchildren-contentchildren-and-querylist-in-angular-896b0c689f6e#.kmb1s4h5n">Understanding ViewChildren, ContentChildren, and QueryList in Angular</a>
-											</h4>
+									<div class="spost clearfix">
+										<div class="entry-c">
+											<div class="entry-title">
+												<h4>
+													<a target="_blank" href="https://netbasal.com/understanding-viewchildren-contentchildren-and-querylist-in-angular-896b0c689f6e#.kmb1s4h5n">Understanding ViewChildren, ContentChildren, and QueryList in Angular</a>
+												</h4>
+											</div>
+											<ul class="entry-meta">
+												<li>14th March 2017</li>
+											</ul>
 										</div>
-										<ul class="entry-meta">
-											<li>14th March 2017</li>
-										</ul>
 									</div>
-								</div>
 
 
 									<div class="spost clearfix">
@@ -888,14 +887,15 @@
 
 
 	<!-- Footer Scripts
-	============================================= -->
-		<!--build:js js/main.min.js  async defer -->
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/plugins.js"></script>
-		<script type="text/javascript" src="js/functions.js"></script>
-		<!-- endbuild -->
-	
-	
+		============================================= -->
+	<!--build:js js/main.min.js  async defer -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<!-- <script type="text/javascript" src="js/elad.js"></script> -->
+	<script type="text/javascript" src="js/plugins.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+	<!-- endbuild -->
+
+
 
 	<script>
 		// $(function () {
@@ -905,21 +905,13 @@
 		function showVideos() {
 			console.log('show videos run')
 			var iframesNodeList = document.querySelector('#testimonials').querySelectorAll('iframe');
-			for (var i = 0; i < iframesNodeList.length; i++){
-				var iframe  = iframesNodeList[i]
+			for (var i = 0; i < iframesNodeList.length; i++) {
+				var iframe = iframesNodeList[i]
 				src = iframe.getAttribute('data-src');
 				iframe.setAttribute('src', src);
 			}
 		}
 		document.addEventListener("DOMContentLoaded", function () {
-			// setTimeout(function (){
-			// 	var lazyBackgrounds = document.querySelectorAll('.back-lazy')
-			// 	for (var i = 0; i <lazyBackgrounds.length; i++ ) {
-			// 		var lazyBack = lazyBackgrounds[i]
-			// 		lazyBack.classList.add('visible')
-			// 	}
-			// 	console.log({lazyBackgrounds})
-			// },1000)
 			var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
 			if ("IntersectionObserver" in window) {
 				let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
@@ -939,7 +931,7 @@
 				});
 			} else {
 				// if IntersectionObserver is not suppurted just change the src. 
-				for (var i = 0; i < lazyImages.length; i++){
+				for (var i = 0; i < lazyImages.length; i++) {
 					var lazyImage = lazyImages[i]
 					lazyImage.src = lazyImage.dataset.src;
 					lazyImage.classList.remove("lazy");

@@ -182,6 +182,7 @@ h4 > span:not(.nocolor),
     text-shadow: none;
 }
 
+/* uncss:ignore */
 .owl-carousel .owl-nav [class*=owl-]:hover {
     background-color: #ebb811 !important;
 }

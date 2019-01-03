@@ -807,7 +807,6 @@ var SEMICOLON = SEMICOLON || {};
 		},
 		// the sponer function
 		pageTransition: function() {
-			console.trace('hey ')
 			if ($body.hasClass('no-transition')) {
 				return true;
 			}
@@ -828,7 +827,7 @@ var SEMICOLON = SEMICOLON || {};
 				animationOut = $body.attr('data-animation-out'),
 				durationIn = $body.attr('data-speed-in'),
 				durationOut = $body.attr('data-speed-out'),
-				loaderTimeOut = $body.attr('data-loader-timeout'),
+				loaderTimeOut = 4000,
 				loaderStyle = $body.attr('data-loader'),
 				loaderColor = $body.attr('data-loader-color'),
 				loaderStyleHtml = $body.attr('data-loader-html'),
@@ -1053,7 +1052,6 @@ var SEMICOLON = SEMICOLON || {};
 					loaderBorderStyle +
 					'></div></div>';
 			}
-
 			$wrapper.animsition({
 				inClass: animationIn,
 				outClass: animationOut,
@@ -2746,14 +2744,13 @@ var SEMICOLON = SEMICOLON || {};
 	// -------------- our addition - mySlider (middle of page) start --------------------------- //
 	SEMICOLON.mySlider = {
 		init: function() {
+			// this function will start the slider, 
+			// it will run when all slider background images are loaded
 			function runSlider(){
 				SEMICOLON.mySlider.sliderParallaxDimensions();
 				SEMICOLON.mySlider.sliderRun();
 				SEMICOLON.mySlider.captionPosition();
 			}
-			// $('.swiper-slide').each(function (index,$el){
-			// 	console.log(index,$el)
-			// })
 			var elSlides = document.querySelectorAll('.swiper-slide')
 			elSlides = [].slice.call(elSlides)
 			// remove the first element becuase he is already visible
@@ -2766,7 +2763,6 @@ var SEMICOLON = SEMICOLON || {};
 				elImg.onload = function (){
 					console.log(this.src)
 					uploadedImgCount++
-					console.log({uploadedImgCount})
 					// if all image are loaded i change the slides background and then run the slider.
 					if (uploadedImgCount === elSlides.length) {
 						for (var j = 0; j < elSlides.length; j++){
@@ -2778,10 +2774,6 @@ var SEMICOLON = SEMICOLON || {};
 					}
 				}
 			}
-			// var x = $('.background-yoga').data('data-bgsrc')
-			// var x = document.querySelector('.background-yoga').dataset.bgsrc
-			// console.log({x})
-			// $('<img/>').attr('src')
 		},
 
 		sliderParallaxDimensions: function() {

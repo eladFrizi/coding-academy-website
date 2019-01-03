@@ -25,16 +25,22 @@ gulp.task('clean:dist', function () {
   return del.sync('dist');
 })
 
-gulp.task('unusedcss', function() {
+gulp.task('unusedcss', function () {
   return gulp.src('dist/styles.min.css')
-      .pipe(uncss({
-          html: ['dist/index.html', 'dist/about.html', 'dist/grads.html','dist/q&a.html',
-        'dist/staff.html' , 'dist/thank.html',
-        'dist/for-employers.html','dist/landing1.html','dist/nextCourse.html'],
-        timeout      : 5000,
-      }
+    .pipe(uncss({
+      html: ['dist/index.html', 'dist/about.html', 'dist/grads.html', 'dist/q&a.html',
+        'dist/staff.html', 'dist/thank.html',
+        'dist/for-employers.html', 'dist/landing1.html', 'dist/nextCourse.html'],
+      ignore: [
+        '.owl-carousel.owl-loaded',
+        '.owl-carousel .owl-stage-outer',
+        '.owl-item',
+        '.owl-carousel.owl-rtl .owl-item',
+        '.sticky-header > #header-wrap > .container > #logo > a::after'
+      ],
+    }
     ))
-      .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./dist'));
 });
 
 
@@ -45,14 +51,17 @@ gulp.task('cssjs', function () {
     // return gulp.src('index.html')
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
-    .pipe(gulpIf('*.css', cssnano()))
+    .pipe(gulpIf('*.css', cssnano(
+      {
+        discardComments: false
+      }
+    )))
     .pipe(gulp.dest('dist'))
 });
 
 gulp.task('simple', function () {
   return gulp.src('*.+(html|php)')
     .pipe(gulp.dest('dist'))
-
 })
 
 // minifed all images- take a lot of time
@@ -68,7 +77,7 @@ gulp.task('images', function () {
 // This task bring the mailer php files into the dist
 gulp.task('include', function () {
   return gulp.src('include/**/*.+(php)')
-    .pipe(gulp. dest('dist/include'))
+    .pipe(gulp.dest('dist/include'))
 });
 
 
