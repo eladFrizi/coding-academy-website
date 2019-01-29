@@ -67,7 +67,7 @@ gulp.task('simple', function () {
 // minifed all images- take a lot of time
 gulp.task('images', function () {
   return gulp.src('images/**/*.+(png|jpg|gif|svg|ico)')
-  // .pipe(imagemin())
+    // .pipe(imagemin())
     .pipe(cache(imagemin({
       interlaced: true
     })))
@@ -83,12 +83,12 @@ gulp.task('include', function () {
 
 gulp.task('copyDatesJson', function () {
   return gulp.src('dates.json')
-          .pipe(gulp.dest('dist/dates.json'))
+    .pipe(gulp.dest('dist/dates.json'))
 })
 
 gulp.task('copyUpdateDates', function () {
   return gulp.src('updateDates.php')
-            .pipe(gulp.dest('dist/updateDates.php'));
+    .pipe(gulp.dest('dist/updateDates.php'));
 })
 
 
@@ -119,16 +119,40 @@ gulp.task('showcase', function () {
 })
 
 
+
+gulp.task('copyLanding2', function () {
+  return gulp.src('landing2/**/*')
+    .pipe(gulp.dest('dist/landing2'))
+})
+
+gulp.task('copyLanding3', function () {
+  return gulp.src('landing3/**/*')
+    .pipe(gulp.dest('dist/landing3'))
+})
+
+gulp.task('copyLanding4', function () {
+  return gulp.src('landing4/**/*')
+    .pipe(gulp.dest('dist/landing4'))
+})
+
+gulp.task('copyLandingPages', function (cb) {
+  runSequence(['copyLanding2', 'copyLanding3', 'copyLanding4'], cb)
+})
+
+
+
 gulp.task('build', function () {
   runSequence('clean:dist',
-    ['showcase',
-     'data', 
-     'swipercss', 
-     'fonts', 
-     'cssjs', 
-     'slider-background', 
-     'include', 
-     'images'
+    [
+      'showcase',
+      'data',
+      'swipercss',
+      'fonts',
+      'cssjs',
+      'slider-background',
+      'include',
+      'images',
+      'copyLandingPages'
     ],
     'htmlmin'
   )

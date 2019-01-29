@@ -313,7 +313,8 @@
 					<div class="container clearfix">
 						<div class="col_one_third nobottommargin flex">
 							<h2>הקורס הקרוב:</h2>
-							<h3> ינואר 2019
+							<h3> 
+							<?php echo $dates['nextCourseHomePage'];?>
 								<br> 
 								 ערב היכרות חוויתי 
 								 <?php echo $dates['nextOpenEveningHomePage'];?>

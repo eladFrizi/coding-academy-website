@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
+<body dir="rtl">
     <form action="./updateDates.php" method="POST">
+        <h1>ערב פתוח הבא</h1>
         <label>
             דף הבית
             <input type="text" name="nextOpenEveningHomePage" id="nextOpenEveningHomePage">
@@ -22,11 +23,38 @@
             לעמודים landing2 landing3 landing4
             <input type="text" name="nextOpenEveningLanding234" id="nextOpenEveningLanding234">
         </label>
+        <br>
         <input type="submit" value="Submit">
 
     </form>
-    <h1>
-        
-    </h1>
+
+
+    <form action="./updateDates.php" method="POST">
+         <h1>
+             תחילת קורס
+         </h1>
+        <label>
+            דף הבית
+            <input type="text" name="nextCourseHomePage" id="nextCourseHomePage">
+        </label>
+        <br>
+        <label>
+            לעמוד landing1
+            <input type="text" name="nextCourseLanding1" id="nextCourseLanding1">
+        </label>
+        <br>
+        <label>
+            לעמודים landing2 landing3 landing4
+            <input type="text" name="nextCourseLanding234" id="nextCourseLanding234">
+        </label>
+        <br>
+        <label>
+            לעמוד הקורס הבא
+            <input type="text" name="nextCourseNextCoursePage" id="nextCourseNextCoursePage">
+        </label>
+        <br>
+        <input type="submit" value="Submit">
+
+    </form>
 </body>
 </html>

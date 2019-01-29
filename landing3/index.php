@@ -141,7 +141,7 @@ $dates = json_decode($string,true);
                     ערב היכרות חוויתי:
                     <?php echo $dates['nextOpenEveningLanding234'];?>
                     <h3 style="margin-top:0;" class="next-course-date">
-                            המחזור הקרוב:
+                    <?php echo $dates['nextCourseLanding234'];?>
                             <span class="navy">
 אפריל 2019</span>
                         </h3>

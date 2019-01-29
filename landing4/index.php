@@ -142,7 +142,7 @@ $dates = json_decode($string,true);
                         <h3 style="margin-top:0;">
                             המחזור הקרוב:
                             <span class="navy">
-אפריל 2019
+                            <?php echo $dates['nextCourseLanding234'];?>
 </span>
                         </h3>
                     </div>

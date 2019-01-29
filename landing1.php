@@ -196,7 +196,10 @@
 					<?php echo $dates['nextOpenEveningLanding1'];?>
 					בו יינתן שיעור לדוגמא
 				</h4>
-				<h4 style="margin-bottom: 0">הקורס מתחיל בינואר 2019</h3>
+				<h4 style="margin-bottom: 0">
+				 הקורס מתחיל
+				 <?php echo $dates['nextCourseLanding1'];?>
+			</h3>
 			</div>
 
 			<div class="content-wrap">

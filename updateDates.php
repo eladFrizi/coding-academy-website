@@ -16,6 +16,22 @@ if (isset($_POST["nextOpenEveningLanding234"]) && !empty($_POST["nextOpenEvening
     $dates["nextOpenEveningLanding234"] = htmlspecialchars($_POST["nextOpenEveningLanding234"]);
 }
 
+if (isset($_POST["nextCourseHomePage"])  && !empty($_POST["nextCourseHomePage"])) {
+    $dates["nextCourseHomePage"] = htmlspecialchars($_POST["nextCourseHomePage"]);
+}
+
+if (isset($_POST["nextCourseLanding1"])   && !empty($_POST["nextCourseLanding1"])) {
+    $dates["nextCourseLanding1"] = htmlspecialchars($_POST["nextCourseLanding1"]);
+}
+
+if (isset($_POST["nextCourseLanding234"]) && !empty($_POST["nextCourseLanding234"])) {
+    $dates["nextCourseLanding234"] = htmlspecialchars($_POST["nextCourseLanding234"]);
+}
+
+if (isset($_POST["nextCourseNextCoursePage"]) && !empty($_POST["nextCourseNextCoursePage"])) {
+    $dates["nextCourseNextCoursePage"] = htmlspecialchars($_POST["nextCourseNextCoursePage"]);
+}
+
 
 
 // in case of success file_put_contents return the number of bytes.
