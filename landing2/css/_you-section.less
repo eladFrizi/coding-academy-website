@@ -1,0 +1,48 @@
+/*****************YOU SECTION************************/
+@media screen and (min-width: 480px){
+    .you-section {
+        p{
+            font-size: 1.3em;
+        }
+
+    }
+    .bocked-in-mobile {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .you-section {
+        .inside-programmer-anim {
+            font-size: 1.875em;
+        }
+        .blocked-in-mobile {
+            display: block;
+        }
+    }
+
+
+}
+
+.you-section {
+    .inside-programmer-anim {
+        animation-duration: 5s;
+        animation-delay: 7s;
+    }
+}
+
+
+
+.generate-column(@i: 1) when (@i =< 7) {
+    .check-anim-@{i} {
+        animation-duration: 0.5s;
+        animation-delay: (@i*1s);
+    }
+    .generate-column(@i + 1);
+}
+
+.generate-column();
+
+.video-player {
+    min-height: 360px;
+}

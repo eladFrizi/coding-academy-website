@@ -1,0 +1,52 @@
+/*****************YOU SECTION************************/
+@media screen and (min-width: 480px) {
+  .you-section p {
+    font-size: 1.3em;
+  }
+  .bocked-in-mobile {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 480px) {
+  .you-section .inside-programmer-anim {
+    font-size: 1.875em;
+  }
+  .you-section .blocked-in-mobile {
+    display: block;
+  }
+}
+.you-section .inside-programmer-anim {
+  animation-duration: 5s;
+  animation-delay: 7s;
+}
+.check-anim-1 {
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+}
+.check-anim-2 {
+  animation-duration: 0.5s;
+  animation-delay: 2s;
+}
+.check-anim-3 {
+  animation-duration: 0.5s;
+  animation-delay: 3s;
+}
+.check-anim-4 {
+  animation-duration: 0.5s;
+  animation-delay: 4s;
+}
+.check-anim-5 {
+  animation-duration: 0.5s;
+  animation-delay: 5s;
+}
+.check-anim-6 {
+  animation-duration: 0.5s;
+  animation-delay: 6s;
+}
+.check-anim-7 {
+  animation-duration: 0.5s;
+  animation-delay: 7s;
+}
+.video-player {
+  min-height: 360px;
+}

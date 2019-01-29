@@ -6,7 +6,7 @@
   "scripts": {
     "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build" : "gulp build"
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -34,7 +34,7 @@
     "del": "^3.0.0",
     "gulp-cache": "^1.0.2",
     "gulp-css-rebase-urls": "0.0.5",
-    "gulp-imagemin": "^3.3.0",
+    "gulp-imagemin": "^3.4.0",
     "gulp-useref": "^3.1.2",
     "run-sequence": "^2.2.1"
   },

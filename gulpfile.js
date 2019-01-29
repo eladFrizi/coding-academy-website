@@ -67,6 +67,7 @@ gulp.task('simple', function () {
 // minifed all images- take a lot of time
 gulp.task('images', function () {
   return gulp.src('images/**/*.+(png|jpg|gif|svg|ico)')
+  // .pipe(imagemin())
     .pipe(cache(imagemin({
       interlaced: true
     })))
@@ -80,6 +81,15 @@ gulp.task('include', function () {
     .pipe(gulp.dest('dist/include'))
 });
 
+gulp.task('copyDatesJson', function () {
+  return gulp.src('dates.json')
+          .pipe(gulp.dest('dist/dates.json'))
+})
+
+gulp.task('copyUpdateDates', function () {
+  return gulp.src('updateDates.php')
+            .pipe(gulp.dest('dist/updateDates.php'));
+})
 
 
 gulp.task('fonts', function () {
@@ -111,7 +121,15 @@ gulp.task('showcase', function () {
 
 gulp.task('build', function () {
   runSequence('clean:dist',
-    ['showcase', 'data', 'swipercss', 'fonts', 'cssjs', 'slider-background', 'include', 'images'],
+    ['showcase',
+     'data', 
+     'swipercss', 
+     'fonts', 
+     'cssjs', 
+     'slider-background', 
+     'include', 
+     'images'
+    ],
     'htmlmin'
   )
 })

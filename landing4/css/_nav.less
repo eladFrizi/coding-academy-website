@@ -1,0 +1,56 @@
+@import "_variables";
+
+.navbar{
+    .navbar-collapse {
+        overflow: hidden;
+        li {
+            div {
+                height: 2px;
+                background: @navy;
+                position: absolute;
+                bottom: 0;
+                width: 0;
+                transition: all 0.3s;
+            }
+            &:hover {
+                div {
+                    width:100%;
+                }
+            }
+
+        }
+
+    }
+}
+
+
+@media (min-width: 768px){
+    .navbar-nav>li {
+        float: right;
+    }
+}
+
+
+
+
+/************LOGO********************/
+.logo-bg {
+    padding: 1.5em 1em;
+
+}
+
+.navbar-default .navbar-brand, .logo-bg {
+    background: #ffffff;
+    background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, rgba(255, 255, 255, 0.3) 30%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffffff), color-stop(60%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(255, 255, 255, 0)));
+    background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, rgba(255, 255, 255, 0.3) 30%, rgba(255, 255, 255, 0) 100%);
+    background: -o-radial-gradient(center, ellipse cover, #ffffff 0%, rgba(255, 255, 255, 0.3) 30%, rgba(255, 255, 255, 0) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%, rgba(255, 255, 255, 0.3) 30%, rgba(255, 255, 255, 0) 100%);
+    background: radial-gradient(ellipse at center, #ffffff 0%, rgba(255, 255, 255, 0.3) 30%, rgba(255, 255, 255, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
+}
+
+.small-icon {
+    color: @navy;
+    font-size: 20px;
+}

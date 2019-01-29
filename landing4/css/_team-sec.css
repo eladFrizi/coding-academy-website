@@ -1,0 +1,7 @@
+/*****************TEAM SECTION************************/
+a.phone-number:hover {
+  text-decoration: none;
+}
+a.phone-number:hover span {
+  color: #e7a181;
+}
