@@ -13,12 +13,12 @@ var uncss = require('gulp-uncss');
 
 
 
-gulp.task('htmlmin', function () {
-  return gulp.src('dist/*.html')
-    .pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
-    .pipe(gulp.dest('dist'));
+// gulp.task('htmlmin', function () {
+//   return gulp.src('dist/*.html')
+//     .pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
+//     .pipe(gulp.dest('dist'));
 
-})
+// })
 
 
 gulp.task('clean:dist', function () {
@@ -153,7 +153,6 @@ gulp.task('build', function () {
       'include',
       'images',
       'copyLandingPages'
-    ],
-    'htmlmin'
+    ]
   )
 })

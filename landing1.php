@@ -2,7 +2,6 @@
 <?php
     $string = file_get_contents("./dates.json");   
 	$dates = json_decode($string,true);
-
 ?>
 <!DOCTYPE html>
 <html dir="rtl" lang="he">
